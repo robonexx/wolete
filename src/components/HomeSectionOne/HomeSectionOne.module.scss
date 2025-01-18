@@ -64,7 +64,7 @@ $font-text: var(--font-playfair);
     @media (max-width: 40em) {
        left: 10%;
        margin-top: 75vh;
-       z-index: 10;
+       z-index: 100;
        background-color: $warm-earth;
        padding: 0.5rem 1rem;
        color: white;

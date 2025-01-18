@@ -4,22 +4,28 @@ import { gsap } from 'gsap';
 import styles from './Hero.module.scss';
 
 const Hero = () => {
+  const videoRef = useRef(null);
   const titleRef = useRef(null);
   const subtitleRef = useRef(null);
   const buttonsRef = useRef(null);
 
   useEffect(() => {
-    const tl = gsap.timeline({ delay: 0.2 });
-    tl.from(titleRef.current, {
-      y: 50,
+    const tl = gsap.timeline({ delay: 0 });
+    tl.from(videoRef.current, {
       opacity: 0,
-      duration: 0.8,
+      duration: 1,
+      ease: 'power3.out',
+    });
+    tl.from(titleRef.current, {
+      y: 100,
+      opacity: 0,
+      duration: 0.6,
       ease: 'power3.out',
     })
       .from(
         subtitleRef.current,
         {
-          y: 50,
+          y: 100,
           opacity: 0,
           duration: 0.8,
           ease: 'power3.out',
@@ -29,7 +35,6 @@ const Hero = () => {
       .from(
         buttonsRef.current.children,
         {
-          y: 50,
           opacity: 0,
           duration: 0.8,
           ease: 'power3.out',
