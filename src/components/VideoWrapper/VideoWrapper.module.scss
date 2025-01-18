@@ -1,7 +1,9 @@
 .video {
+    position: relative;
     height: 60vh;
-    font-family: times, serif; // or whatever font you prefer
-    background-color: #f3ebe3;
+    font-family: times, serif;
+    background-color: #20201f;
+    z-index: 1;
     overflow: hidden;
   }
   
@@ -9,6 +11,6 @@
     object-fit: cover;
     object-position: center;
     width: 100%;
-    height: 60vh;
+    height: 600px;
   }
   

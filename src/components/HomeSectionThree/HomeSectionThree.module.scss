@@ -1,0 +1,46 @@
+$font-headline: var(--font-fira-sans);
+$font-text: var(--font-playfair);
+
+$light-gold: #B8A054;
+
+.homeSectionThree {
+    position: relative;
+    min-height: 100vh;
+    height: 100%;
+    font-family: $font-text; 
+    background: rgb(6,4,29);
+    background: radial-gradient(circle, rgba(6,4,29,1), rgba(45,41,37,1), rgb(14, 14, 14));
+    padding: 10rem;
+
+    @media (max-width: 40em) {
+        height: 100%;
+        min-height: 100svh;
+        padding: 4rem 1rem;
+     }
+  }
+  
+  .text {
+    font-size: clamp(1rem, 4vw, 3vw);
+    color: rgb(234, 234, 234);
+    position: absolute;
+    line-height: 50px;
+    width: 80%;
+    display: block;
+    text-align: left;
+    align-content: center;
+    @media (max-width: 60em) {
+        line-height: 1.5;
+        width: 90%;
+     }
+
+     > span {
+        color: $light-gold;
+     }
+  }
+  
+  .highlight {
+    height: auto;
+    width: 80px;
+    border-radius: 5px;
+  }
+  

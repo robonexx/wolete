@@ -19,7 +19,7 @@ const playfair = Playfair_Display({
 });
 
 export const metadata = {
-  title: 'Wooolete',
+  title: 'Wolete Official',
   description:
     'Rebecca Wolete is a Dance artist, Educator, Organizer and Cultural Ambassador, a dynamic force of movement and expression, a dancer whose artistry flows seamlessly between the modern and the ancestral. ',
 };

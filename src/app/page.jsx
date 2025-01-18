@@ -4,6 +4,8 @@ import Hero from '@/components/hero';
 import { Jaini_Purva } from 'next/font/google';
 import HomeSectionOne from '@/components/HomeSectionOne';
 import VideoWrapper from '@/components/VideoWrapper';
+import HomeSectionThree from '@/components/HomeSectionThree';
+import SliderSection from '@/components/SliderSection';
 
 export default function Home() {
   return (
@@ -11,6 +13,8 @@ export default function Home() {
       <Hero />
       <HomeSectionOne />
       <VideoWrapper />
+      <HomeSectionThree />
+      <SliderSection />
     </div>
   );
 }

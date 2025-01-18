@@ -13,8 +13,6 @@ const HomeSectionOne = () => {
       </div>
 
       <p className={styles.aboutDes}>
-        Rebecca Wolete is a Dance artist, Educator, Organizer and Cultural
-        Ambassador. <br />
         A dynamic force of movement and expression, <br />
         a dancer whose artistry flows seamlessly <br />
         between the modern and the ancestral.
