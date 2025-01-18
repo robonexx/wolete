@@ -1,9 +1,9 @@
+import Hero from '@/components/Hero';
 import styles from './page.module.css';
 import HomeSectionOne from '@/components/HomeSectionOne';
 import VideoWrapper from '@/components/VideoWrapper';
 import HomeSectionThree from '@/components/HomeSectionThree';
 import SliderSection from '@/components/SliderSection';
-import Hero from '@/components/Hero';
 
 export default function Home() {
   return (
