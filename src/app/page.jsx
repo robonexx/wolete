@@ -1,11 +1,9 @@
-import Image from 'next/image';
 import styles from './page.module.css';
-import Hero from '@/components/hero';
-import { Jaini_Purva } from 'next/font/google';
 import HomeSectionOne from '@/components/HomeSectionOne';
 import VideoWrapper from '@/components/VideoWrapper';
 import HomeSectionThree from '@/components/HomeSectionThree';
 import SliderSection from '@/components/SliderSection';
+import Hero from '@/components/zero';
 
 export default function Home() {
   return (

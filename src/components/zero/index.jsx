@@ -10,7 +10,7 @@ const Hero = () => {
   const buttonsRef = useRef(null);
 
   useEffect(() => {
-    const tl = gsap.timeline({ delay: 0 });
+    const tl = gsap.timeline({ delay: 0.1 });
     tl.from(videoRef.current, {
       opacity: 0,
       duration: 1,
