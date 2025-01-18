@@ -2,7 +2,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import Link from 'next/link';
 import { gsap } from 'gsap';
-import styles from './menu.module.scss';
+import styles from './Header.module.scss';
 
 const navItems = [
   {
