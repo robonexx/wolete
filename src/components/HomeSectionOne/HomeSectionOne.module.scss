@@ -1,0 +1,151 @@
+$gold: #BF953F;
+$reddish: #8a1a15;
+$green: #237b1e;
+$light-gold: #B8A054;
+$warm-earth: #a4673f;
+
+$font-headline: var(--font-fira-sans);
+$font-text: var(--font-playfair);
+
+.homeSectionOne {
+    max-width: 100svw;
+    height: 100vh;
+    font-family: time; 
+    background: rgb(2,0,36);
+    background: linear-gradient(315deg, rgba(2,0,36,1) 0%, rgb(24, 23, 27) 66%, rgb(30, 29, 33) 100%);
+    position: relative; 
+    overflow: hidden;
+  }
+  
+  .tagline {
+    position: absolute;
+    color: white;
+    font-family: $font-text;
+    font-size: clamp(1.75rem, 2vw, 1vw);
+    margin-top: 6%;
+    left: 44.5%;
+
+    @media (max-width: 40em) {
+        margin-top: 20vh;
+        left: 20%;
+       color: white;
+       text-shadow: 1px 2px black;
+       z-index: 10;
+    }
+  }
+  
+  .aboutHead {
+    position: absolute;
+    font-size: clamp(2rem, 4vw, 3.3vw);
+    color: $gold;
+    margin-top: 8%;
+    left: 39%;
+    line-height: 70px;
+    z-index: 10;
+    font-weight: 600;
+
+    @media (max-width: 40em) {
+        margin-top: 30vh;
+        text-shadow: 1px 1px rgb(40, 17, 77);
+        line-height: 30px;
+        left: 20%;
+    }
+  }
+  
+  .aboutDes {
+    position: absolute;
+    font-size: clamp(0.8rem, 2vw, 1vw);
+    font-family: $font-text;
+    margin-top: 20%;
+    left: 41.5%;
+    @media (max-width: 40em) {
+       left: 10%;
+       margin-top: 75vh;
+       z-index: 10;
+       background-color: $warm-earth;
+       padding: 0.5rem 1rem;
+       color: white;
+    }
+  }
+  
+  /* === Image Classes (Renamed) === */
+  .imageOne {
+    position: absolute;
+    height: auto;
+    width: 200px;
+    border-radius: 10px;
+    margin-top: 3%;
+    left: 20%;
+    animation: move 10s ease-in infinite alternate;
+
+    @media (max-width: 40em) {
+        width: 160px;
+        margin-top: 5%;
+        left: 1%;
+        z-index: 2;
+    }
+  }
+  
+  .imageTwo {
+    position: absolute;
+    height: auto;
+    width: 150px;
+    border-radius: 10px;
+    margin-top: 2.5%;
+    left: 67.5%;
+    animation: move 10s ease-in infinite alternate;
+    @media (max-width: 40em) {
+        width: 220px;
+        margin-top: 10%;
+        left: 65%;
+        z-index: 1;
+    }
+  }
+  
+  .imageThree {
+    position: absolute;
+    height: auto;
+    width: 450px;
+    border-radius: 10px;
+    margin-top: 15%;
+    left: 2%;
+    animation: move 10s ease-in infinite alternate;
+    @media (max-width: 40em) {
+        width: 220px;
+        margin-top: 80%;
+        left: -20vw;
+        z-index: 2;
+    }
+  }
+  
+  .imageFour {
+    position: absolute;
+    height: auto;
+    width: 320px;
+    border-radius: 10px;
+    margin-top: 20%;
+    left: 75%;
+    animation: move 10s ease-in infinite alternate;
+    @media (max-width: 40em) {
+        margin-top: 45vh;
+        width: 320px;
+        left: 25%;
+        z-index: 1;
+    }
+  }
+  
+  @keyframes move {
+    25% {
+      transform: translateY(-2px);
+    }
+    50% {
+      transform: translateY(3px);
+    }
+    75% {
+      transform: translateY(3px);
+    }
+    100% {
+      transform: translateY(2px);
+    }
+  }
+  

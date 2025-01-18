@@ -1,7 +1,7 @@
 'use client';
 import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
-import styles from './hero.module.scss';
+import styles from './Hero.module.scss';
 
 const Hero = () => {
   const titleRef = useRef(null);
@@ -54,7 +54,7 @@ const Hero = () => {
 
       <div className={styles.content}>
         <h1 ref={titleRef} className={styles.title}>
-          Woolete
+          WOOOLETE
         </h1>
         <p ref={subtitleRef} className={styles.subtitle}>
           Dance artist, Educator, Organizer and Cultural Ambassador

@@ -1,100 +1,208 @@
-// Global menu styles
-$primary-color: #d4af37; // Gold color
-$hover-color: #e5c365;
-$bg-dark: #2e2e2e;
-$bg-light: #fff;
+// Variables
+$bg-dark: #222;
+$gold: #d4af37;
+$light: #fff;
+$transition-speed: 0.3s;
 
-// Menu container
-.menu {
+$font-headline: var(--font-fira-sans);
+$font-text: var(--font-playfair);
+
+// ========== HEADER ========== //
+.header {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1000;
-  background-color: $bg-dark;
+  height: 70px;
+  padding: 0 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
-  color: $bg-light;
+  background: transparent;
+  color: $light;
+  z-index: 999;
+}
 
-  .logo {
-    font-size: 2rem;
-    color: $primary-color;
-  }
+.logo a {
+  font-size: 1.8rem;
+  color: $gold;
+  text-decoration: none;
+  font-weight: 700;
+  font-family: $font-headline;
+}
 
-  .menu-items {
+// ========== DESKTOP NAV ========== //
+.desktopNav {
+  // Visible by default, hide on mobile
+  .navList {
     display: flex;
-    gap: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 
-    .menu-item {
+    li {
       position: relative;
-      font-size: 1rem;
-      font-weight: 600;
-      color: $bg-light;
-      cursor: pointer;
-      padding: 0.5rem 1rem;
+      margin-left: 2rem;
 
-      &:hover {
-        color: $primary-color;
+      // Example styling
+      a,
+      span {
+        font-size: 1.1rem;
+        color: $light;
+        text-decoration: none;
+        font-family: $font-headline;
+        font-weight: 500;
+        cursor: pointer;
+        &:hover {
+          color: $gold;
+        }
       }
 
-      &.dropdown:hover .dropdown-menu {
+      // Hover dropdown
+      &.hasDropdown:hover .dropdownMenu {
         display: block;
       }
 
-      .dropdown-menu {
+      .dropdownMenu {
         display: none;
         position: absolute;
         top: 100%;
         left: 0;
-        background-color: $bg-dark;
-        padding: 1rem;
-        border-radius: 8px;
-        min-width: 200px;
-        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        background: $bg-dark;
+        padding: 0.5rem 1rem;
+        border-radius: 4px;
+
+        ul {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+        }
+
+        li {
+          margin: 0.5rem 0;
+          a {
+            font-size: 0.95rem;
+            white-space: nowrap;
+          }
+        }
       }
     }
   }
+}
 
-  .hamburger {
+.hamburger {
+  // Hide by default on desktop
+  display: none;
+  @media (max-width: 900px) {
+    display: block;
+  }
+
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 1.5rem;   
+  right: 2rem;  
+
+  width: 30px;
+  height: 24px;
+  z-index: 1000;
+
+  .line {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background-color: $gold;
+    transition: 0.4s;
+    transform-origin: center;
+
+    &:nth-of-type(1) {
+      top: 2;
+    }
+    &:nth-of-type(2) {
+      bottom: 2;
+    }
+  }
+}
+
+.open {
+  border-radius: 50%;
+}
+
+// ========== FULLSCREEN MOBILE OVERLAY ========== //
+.mobileOverlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  background: $bg-dark;
+  transform: translateX(100%);
+  opacity: 0;
+  z-index: 999;
+  // GSAP will slide it to x: 0 and set autoAlpha: 1
+}
+
+.mobileNavList {
+  list-style: none;
+  margin: 100px 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: $font-headline;
+
+  .mobileNavItem {
+    margin: 1rem 0;
+    font-size: 1.5rem;
+    a {
+      color: $light;
+      text-decoration: none;
+      &:hover {
+        color: $gold;
+      }
+    }
+  }
+}
+
+// Mobile dropdown styling
+.mobileDropdownToggle {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  .arrow {
+    margin-left: 8px;
+    font-size: 1rem;
+  }
+}
+
+.mobileDropdownMenu {
+  margin-top: 0.5rem;
+  background: $bg-dark;
+  padding: 0.5rem 1rem;
+  border: 1px solid $gold;
+  border-radius: 4px;
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+// ========== MEDIA QUERIES ========== //
+@media (max-width: 900px) {
+  .desktopNav {
     display: none;
-    cursor: pointer;
-
-    .bar {
-      width: 30px;
-      height: 4px;
-      background-color: $bg-light;
-      margin: 5px 0;
-      transition: all 0.3s ease;
-    }
   }
+  .hamburger {
+    display: inline-block;
+    z-index: 1000;
+  }
+}
 
-  @media (max-width: 768px) {
-    .menu-items {
-      display: none;
-      flex-direction: column;
-      position: absolute;
-      top: 80px;
-      right: 0;
-      background-color: $bg-dark;
-      width: 100%;
-      padding: 1rem;
-      z-index: 10;
-
-      .menu-item {
-        padding: 1rem;
-        width: 100%;
-        text-align: center;
-      }
-    }
-
-    .hamburger {
-      display: block;
-    }
-
-    .active .menu-items {
-      display: flex;
-    }
+@media (min-width: 901px) {
+  .mobileOverlay {
+    display: none; 
   }
 }
