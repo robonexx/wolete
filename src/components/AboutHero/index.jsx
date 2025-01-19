@@ -23,7 +23,7 @@ const AboutHero = () => {
         <a href='https://www.instagram.com/wooolete/' className={styles.btn}>
           Connect on insta
         </a>
-        <img src='/images/IMAGE1.JPG' alt='' className={styles.image} />
+        <img src='/images/image1.JPG' alt='' className={styles.image} />
       </div>
     </div>
   );
