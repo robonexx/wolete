@@ -26,15 +26,15 @@ $font-text: var(--font-playfair);
         top: 8%;
         left: 50%;
         transform: translateX(-50%);
-        width: 99%;
-        height: 80vh;
+        width: 90%;
+        height: 100%;
         border-radius: 20px;
         overflow: hidden;
         text-align: center;
     }
     .image{
         object-fit: cover;
-        object-position: top center;
+        object-position: center 40%;
         height: 100%;
         width: 100%;
     }
@@ -47,6 +47,7 @@ $font-text: var(--font-playfair);
         line-height: 80px;
         z-index: 2;
         font-family: $font-headline;
+        text-shadow: 5px 5px 5px rgba(0,0,0,.225);
 
         @media (max-width: 40em) {
             top: 56%;
@@ -86,6 +87,7 @@ $font-text: var(--font-playfair);
         border-radius: 20px;
         animation: move 10s ease-in infinite alternate;
         overflow: hidden;
+        animation: move 10s ease-in infinite alternate;
     }
 
     .credit{
@@ -97,18 +99,19 @@ $font-text: var(--font-playfair);
 
         @media (max-width: 40em) {
            left: 5%;
+           top: 10.65vh;
         }
     }
     .credit a {
         position: relative;
-        color: #d4af37;
+        color: #1a1919;
         text-decoration: none;
         font-family: $font-text;
         text-shadow: 5px 5px 5px rgba(0,0,0,.225);
         
         @media (max-width: 40em) {
             left: 5%;
-            color: #1a1919;
+           
          }
     }
 
