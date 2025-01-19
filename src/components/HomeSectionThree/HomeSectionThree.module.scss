@@ -6,7 +6,7 @@ $light-gold: #B8A054;
 .homeSectionThree {
     position: relative;
     min-height: 100vh;
-    height: 100%;
+    height:fit-content;
     font-family: $font-text; 
     background: rgb(6,4,29);
     background: radial-gradient(circle, rgba(6,4,29,1), rgba(45,41,37,1), rgb(14, 14, 14));
@@ -15,22 +15,23 @@ $light-gold: #B8A054;
     @media (max-width: 40em) {
         height: 100%;
         min-height: 100svh;
-        padding: 4rem 1rem;
+        padding: 4rem 0;
      }
   }
   
   .text {
     font-size: clamp(1rem, 4vw, 3vw);
     color: rgb(234, 234, 234);
-    position: absolute;
+    position: relative;
     line-height: 50px;
-    width: 80%;
+    width: 90%;
     display: block;
     text-align: left;
     align-content: center;
     @media (max-width: 60em) {
         line-height: 1.5;
-        width: 90%;
+        width: 95%;
+        padding-left: 5%;
      }
 
      > span {
@@ -40,7 +41,23 @@ $light-gold: #B8A054;
   
   .highlight {
     height: auto;
-    width: 80px;
+    width: 100px;
     border-radius: 5px;
+  }
+
+  .highlighttwo {
+    height: auto;
+    width: 140px;
+    border-radius: 5px;
+  }
+
+  .highlightthree {
+    height: auto;
+    width: 180px;
+    border-radius: 5px;
+    @media (max-width: 60em) {
+      
+      width: 100%;
+   }
   }
   
