@@ -15,7 +15,10 @@ $light-gold: #B8A054;
   max-height: 100vh;
   overflow: hidden; 
   z-index: 1;
-  color: #fff; 
+  padding-top: 8rem;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  overflow: hidden;
 
   .videoContainer {
     position: absolute;

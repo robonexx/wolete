@@ -8,13 +8,12 @@ $font-headline: var(--font-fira-sans);
 $font-text: var(--font-playfair);
 
 .homeSectionOne {
-    max-width: 100svw;
+    max-width: 100%;
     height: 100vh;
     font-family: time; 
     background: rgb(2,0,36);
     background: linear-gradient(315deg, rgba(2,0,36,1) 0%, rgb(24, 23, 27) 66%, rgb(30, 29, 33) 100%);
     position: relative; 
-    overflow: hidden;
   }
   
   .tagline {
@@ -112,12 +111,13 @@ $font-text: var(--font-playfair);
     border-radius: 10px;
     margin-top: 15%;
     left: 2%;
-    animation: move 10s ease-in infinite alternate;
+    z-index:20;
+    animation: bounce 6s ease-in infinite alternate;
     @media (max-width: 40em) {
         width: 220px;
         margin-top: 80%;
         left: -20vw;
-        z-index: 10;
+        
     }
   }
   
@@ -128,7 +128,7 @@ $font-text: var(--font-playfair);
     border-radius: 10px;
     margin-top: 20%;
     left: 75%;
-    animation: move 10s ease-in infinite alternate;
+    animation: bounce-reverse 10s ease-in infinite alternate;
     @media (max-width: 40em) {
         margin-top: 45vh;
         width: 320px;
@@ -149,6 +149,36 @@ $font-text: var(--font-playfair);
     }
     100% {
       transform: translateY(2px);
+    }
+  }
+
+  @keyframes bounce {
+    25% {
+      transform: translateY(-3px);
+    }
+    50% {
+      transform: translateY(4px);
+    }
+    75% {
+      transform: translateY(-2px);
+    }
+    100% {
+      transform: translateY(2px);
+    }
+  }
+
+  @keyframes bounce-reverse {
+    25% {
+      transform: translateY(3px);
+    }
+    50% {
+      transform: translateY(-4px);
+    }
+    75% {
+      transform: translateY(2px);
+    }
+    100% {
+      transform: translateY(-2px);
     }
   }
   

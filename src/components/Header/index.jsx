@@ -7,7 +7,7 @@ import styles from './Header.module.scss';
 const navItems = [
   {
     label: 'About',
-    subItems: [{ label: 'Info', path: '/about/info' }],
+    path: '/about',
   },
   {
     label: 'Creative Outlet/Portfolio',
