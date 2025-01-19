@@ -34,6 +34,7 @@ $font-text: var(--font-playfair);
     }
     .image{
         object-fit: cover;
+        object-position: top center;
         height: 100%;
         width: 100%;
     }
