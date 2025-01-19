@@ -23,6 +23,11 @@ $font-text: var(--font-playfair);
   z-index: 999;
 }
 
+.logo {
+  position: relative;
+  z-index: 9999;
+}
+
 .logo a {
   font-size: 1.8rem;
   color: $gold;
@@ -105,7 +110,7 @@ $font-text: var(--font-playfair);
   right: 2rem;  
   width: 30px;
   height: 24px;
-  z-index: 1000;
+  z-index: 9999;
 
   @media (max-width: 900px) {
     display: block;

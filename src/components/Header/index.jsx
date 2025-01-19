@@ -1,4 +1,5 @@
 'use client';
+import { usePathname } from 'next/navigation';
 import React, { useState, useRef, useEffect } from 'react';
 import Link from 'next/link';
 import { gsap } from 'gsap';
@@ -50,6 +51,8 @@ export default function Header() {
   const menuLinksRef = useRef([]);
   const desktopLinksRef = useRef([]);
   const logoRef = useRef([null]);
+
+  const pathname = usePathname();
 
   const isDesktop = () => window.innerWidth >= 1024;
 
@@ -165,6 +168,10 @@ export default function Header() {
       ))}
     </ul>
   );
+
+  useEffect(() => {
+    setMenuOpen(false);
+  }, [pathname]);
 
   return (
     <header className={styles.header}>
