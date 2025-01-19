@@ -3,7 +3,7 @@ import styles from './page.module.scss';
 export default function Contact() {
   return (
     <div className={styles.page}>
-      <h1>Y3nko</h1>
+      <h1>Contact page</h1>
     </div>
   );
 }

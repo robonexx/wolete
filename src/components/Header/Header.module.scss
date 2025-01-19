@@ -31,9 +31,13 @@ $font-text: var(--font-playfair);
   font-family: $font-headline;
 }
 
-// ========== DESKTOP NAV ========== //
+.logo a img {
+  width: 64px;
+  height: auto;
+}
+
 .desktopNav {
-  // Visible by default, hide on mobile
+ 
   .navList {
     display: flex;
     list-style: none;
@@ -93,20 +97,19 @@ $font-text: var(--font-playfair);
 .hamburger {
   // Hide by default on desktop
   display: none;
-  @media (max-width: 900px) {
-    display: block;
-  }
-
   background: none;
   border: none;
   cursor: pointer;
   position: absolute;
   top: 1.5rem;   
   right: 2rem;  
-
   width: 30px;
   height: 24px;
   z-index: 1000;
+
+  @media (max-width: 900px) {
+    display: block;
+  }
 
   .line {
     position: absolute;

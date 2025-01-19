@@ -1,9 +1,9 @@
 import styles from './page.module.scss';
 
-export default function Ubuntu() {
+export default function Bookings() {
   return (
     <div className={styles.page}>
-      <h1>Blackout Family</h1>
+      <h1>Bookings page</h1>
     </div>
   );
 }

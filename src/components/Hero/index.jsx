@@ -5,6 +5,7 @@ import styles from './Hero.module.scss';
 
 const Hero = () => {
   const videoRef = useRef(null);
+  const title2Ref = useRef(null);
   const titleRef = useRef(null);
   const subtitleRef = useRef(null);
   const buttonsRef = useRef(null);
@@ -16,6 +17,12 @@ const Hero = () => {
       duration: 1,
       ease: 'power3.out',
     });
+    tl.from(title2Ref.current, {
+      x: -200,
+      opacity: 0,
+      duration: 0.4,
+      ease: 'power3.out',
+    });
     tl.from(titleRef.current, {
       y: 100,
       opacity: 0,
@@ -25,9 +32,9 @@ const Hero = () => {
       .from(
         subtitleRef.current,
         {
-          y: 100,
+          x: 200,
           opacity: 0,
-          duration: 0.8,
+          duration: 1,
           ease: 'power3.out',
         },
         '-=0.4' // start slightly earlier
@@ -35,6 +42,7 @@ const Hero = () => {
       .from(
         buttonsRef.current.children,
         {
+          y: 100,
           opacity: 0,
           duration: 0.8,
           ease: 'power3.out',
@@ -58,9 +66,12 @@ const Hero = () => {
       </div>
 
       <div className={styles.content}>
-        <h1 ref={titleRef} className={styles.title}>
-          WOOOLETE
-        </h1>
+        <div className={styles.title}>
+          <h2 ref={title2Ref}>Rebecca</h2>
+          <h1 ref={titleRef} className={styles.title}>
+            WOOOLETE
+          </h1>
+        </div>
         <p ref={subtitleRef} className={styles.subtitle}>
           Dance artist, Educator, Organizer and Cultural Ambassador
         </p>
