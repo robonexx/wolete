@@ -1,9 +1,9 @@
 import styles from './page.module.scss';
 
-export default function Info() {
+export default function Yenko() {
   return (
     <div className={styles.page}>
-      <h1>Info page</h1>
+      <h1>Y3NKO</h1>
     </div>
   );
 }

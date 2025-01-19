@@ -1,9 +1,9 @@
 import styles from './page.module.scss';
 
-export default function Contact() {
+export default function Ubuntu() {
   return (
     <div className={styles.page}>
-      <h1>Y3nko</h1>
+      <h1>Ubuntu page</h1>
     </div>
   );
 }
