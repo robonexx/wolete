@@ -6,11 +6,11 @@ const HomeSectionThree = () => {
     <div className={styles.homeSectionThree}>
       <p className={styles.text}>
         Rooted in the <span>vibrant traditions</span>{' '}
-        <img src='/images/image1.JPG' alt='' className={styles.highlight} /> of
+        <img src='/images/image6.png' alt='' className={styles.highlight} /> of
         Afrocentric culture and driven by a deep{' '}
         <span>passion for community</span>, <br />
         <img
-          src='/images/image2.JPG'
+          src='/images/image8.jpeg'
           alt=''
           className={styles.highlight}
         />{' '}
@@ -18,7 +18,7 @@ const HomeSectionThree = () => {
         her journey is one of{' '}
         <span>connection, rhythm, and transformation</span>. <br />
         Rebecca’s dedication to her craft{' '}
-        <img src='/images/image3.JPG' alt='' className={styles.highlight} /> has
+        <img src='/images/image7.png' alt='' className={styles.highlight} /> has
         led her to perform at renowned institutions like Dramaten, <br />
         live shows with artists both nationally and internationally,
         <br /> experiences that have enriched her perspective and expanded her
