@@ -61,7 +61,7 @@ const Hero = () => {
           loop
           autoPlay
           muted
-          src='/videos/test.mp4'
+          src='/videos/wolete.webm'
         />
       </div>
 
