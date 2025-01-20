@@ -5,7 +5,7 @@ const VideoWrapper = () => {
   return (
     <div className={styles.video}>
       <video
-        src='/videos/video1.mp4'
+        src='/videos/wolete.webm'
         autoPlay
         loop
         muted
