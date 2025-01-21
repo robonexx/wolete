@@ -54,6 +54,7 @@ const Hero = () => {
 
   return (
     <div className={styles.hero}>
+      <div className={styles.overlay}></div>
       <div className={styles.videoContainer}>
         <video
           width='100%'
@@ -69,7 +70,7 @@ const Hero = () => {
         <div className={styles.title}>
           <h2 ref={title2Ref}>Rebecca</h2>
           <h1 ref={titleRef} className={styles.title}>
-            WOOOLETE
+            WOLETE
           </h1>
         </div>
         <p ref={subtitleRef} className={styles.subtitle}>

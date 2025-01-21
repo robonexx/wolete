@@ -8,6 +8,10 @@
     background: radial-gradient(circle, rgba(6,4,29,1), rgba(45,41,37,1), rgb(14, 14, 14));
     padding: 10rem;
 
+    @media (max-width: 60em) {
+     padding: 6rem 0;        
+  }
+
     h1 {
         width: 100%;
         margin-top: 200px;
