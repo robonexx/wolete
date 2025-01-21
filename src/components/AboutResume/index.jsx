@@ -195,84 +195,42 @@ const AboutResume = () => {
   }, []);
 
   return (
-    <div className={styles.aboutResume}>
-      <div className={styles.coverDrop}>
-        <div className={styles.ingrHead}>
-          About <br />
-          Me&nbsp; <span>❤️</span>
-        </div>
-        <p className={styles.ingrAbout}>
-          Rebecca Wolete is a Dance artist, Educator, Organizer and Cultural
-          Ambassador. A dynamic force of movement and expression, a dancer whose
-          artistry flows seamlessly between the modern and the ancestral.
-          <br />
-          <br />
-          Rooted in the vibrant traditions of Afrocentric culture and driven by
-          a deep passion for community, her journey is one of connection,
-          rhythm, and transformation. Rebecca’s dedication to her craft has led
-          her to perform at renowned institutions like Dramaten, live shows with
-          artists both nationally and internationally, experiences that have
-          enriched her perspective and expanded her creative horizons.
-          <br />
-          <br />
-          Beyond the stage, Rebecca is a passionate advocate for community
-          empowerment. She believes in the transformative power of dance as a
-          tool for healing, unity, and cultural celebration.
-          <br />
-          Whether leading workshops, performing for diverse audiences, or
-          collaborating on projects that spotlight African artistry, Rebecca’s
-          work is a testament to her commitment to using dance as a medium for
-          change.
-          <br />
-          <br />
-          For Rebecca, dance is more than a performance—it’s a bridge that
-          transcends language, weaving stories that resonate across generations
-          and cultures.
-        </p>
-
-        <div className={styles.table}>
-          {/* Stage Productions Section */}
-          <div className={styles.tableSection}>
-            <h3 className={styles.tableTitle}>Stage Productions</h3>
-            {productionsData.stageProductions.map((item, index) => (
-              <div key={index} className={styles.tableRow}>
-                <span className={styles.label}>{item.title}</span>
-                <span className={styles.value}>
-                  {item.role}, {item.location}, {item.year}
-                </span>
-              </div>
-            ))}
-          </div>
-
-          {/* Selection / Creative Outlet Section */}
-          <div className={styles.tableSection}>
-            <h3 className={styles.tableTitle}>Selection / Creative Outlet</h3>
-            {productionsData.creativeOutlet.map((item, index) => (
-              <div key={index} className={styles.tableRow}>
-                <span className={styles.label}>{item.title}</span>
-                <span className={styles.value}>
-                  {item.location}, {item.year}
-                </span>
-              </div>
-            ))}
-          </div>
-
-          {/* Educator / Workshops Section */}
-          <div className={styles.tableSection}>
-            <h3 className={styles.tableTitle}>Educator / Workshops</h3>
-            {productionsData.educatorWorkshops.map((workshop, index) => (
-              <div key={index} className={styles.tableRow}>
-                <span className={styles.value}>{workshop}</span>
-              </div>
-            ))}
-          </div>
+    <div className={styles.aboutResume} ref={tableRef}>
+      <div className={styles.leftColumn}>
+        <div className={styles.tableSection}>
+          <h3 className={styles.tableTitle}>Stage Productions</h3>
+          {productionsData.stageProductions.map((item, index) => (
+            <div key={index} className={styles.tableRow} ref={(el) => (rowsRef.current[index] = el)}>
+              <span className={styles.label}>{item.title}</span>
+              <span className={styles.value}>
+                {item.role}, {item.location}, {item.year}
+              </span>
+            </div>
+          ))}
         </div>
 
-        <img
-          src='/images/becka.png'
-          alt='Cover'
-          className={styles.coverPic}
-        />
+        <div className={styles.tableSection}>
+          <h3 className={styles.tableTitle}>Educator / Workshops</h3>
+          {productionsData.educatorWorkshops.map((workshop, index) => (
+            <div key={index} className={styles.tableRow} ref={(el) => (rowsRef.current[index + productionsData.stageProductions.length] = el)}>
+              <span className={styles.value}>{workshop}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div className={styles.rightColumn}>
+        <div className={styles.tableSection}>
+          <h3 className={styles.tableTitle}>Selection / Creative Outlet</h3>
+          {productionsData.creativeOutlet.map((item, index) => (
+            <div key={index} className={styles.tableRow} ref={(el) => (rowsRef.current[index + productionsData.stageProductions.length + productionsData.educatorWorkshops.length] = el)}>
+              <span className={styles.label}>{item.title}</span>
+              <span className={styles.value}>
+                {item.location}, {item.year}
+              </span>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
