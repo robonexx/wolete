@@ -81,8 +81,8 @@ $font-text: var(--font-playfair);
     animation: move 10s ease-in infinite alternate;
 
     @media (max-width: 40em) {
-        width: 160px;
-        margin-top: 5%;
+        width: 110px;
+        margin-top: -10%;
         left: 1%;
         z-index: 2;
     }
@@ -97,8 +97,8 @@ $font-text: var(--font-playfair);
     left: 67.5%;
     animation: move 10s ease-in infinite alternate;
     @media (max-width: 40em) {
-        width: 220px;
-        margin-top: 10%;
+        width: 120px;
+        margin-top: 6%;
         left: 65%;
         z-index: 1;
     }
@@ -116,7 +116,7 @@ $font-text: var(--font-playfair);
     @media (max-width: 40em) {
         width: 220px;
         margin-top: 80%;
-        left: -20vw;
+        left: -10vw;
         
     }
   }
@@ -130,9 +130,9 @@ $font-text: var(--font-playfair);
     left: 75%;
     animation: bounce-reverse 10s ease-in infinite alternate;
     @media (max-width: 40em) {
-        margin-top: 45vh;
-        width: 320px;
-        left: 25%;
+        margin-top: 47.5vh;
+        width: 120px;
+        left: 60%;
         z-index: 1;
     }
   }
