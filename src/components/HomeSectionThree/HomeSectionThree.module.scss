@@ -20,7 +20,7 @@ $light-gold: #B8A054;
   }
   
   .text {
-    font-size: clamp(1rem, 4vw, 3vw);
+    font-size: clamp(1.25rem, 4vw, 3vw);
     color: rgb(234, 234, 234);
     position: relative;
     line-height: 50px;
@@ -36,19 +36,32 @@ $light-gold: #B8A054;
 
      > span {
         color: $light-gold;
+        font-size: 6rem;
+        line-height: 60px;
+        @media (max-width: 60em) {
+          font-size: 2rem;
+          line-height: 1;
+       }
      }
   }
   
   .highlight {
     height: auto;
     width: 100px;
-    border-radius: 5px;
+    border-radius: 50%;
   }
 
   .highlighttwo {
     height: auto;
-    width: 140px;
+    width: 240px;
     border-radius: 5px;
+
+    @media (max-width: 60em) {
+      height: 100px;
+      width: 240px;
+      object-fit: cover;
+      float: right;
+   }
   }
 
   .highlightthree {
