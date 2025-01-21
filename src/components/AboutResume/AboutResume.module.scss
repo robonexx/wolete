@@ -57,13 +57,18 @@ $white: #f8f8f8;
     }
   
     .ingrHead {
-      position: absolute;
-      font-size: 5.5vw;
+      position: relative;
+      font-size: clamp(2rem, 4vw, 5.5vw);
       margin-top: 5%;
       left: 60px;
       text-align: left;
       line-height: 60px;
       z-index: 1;
+
+      @media (max-width: 40em) {
+line-height: 40px;
+left: 1rem;
+      }
 
       > span {
         margin-top: 1rem;
@@ -71,7 +76,7 @@ $white: #f8f8f8;
     }
   
     .ingrAbout {
-      font-size: 0.9vw;
+      font-size: clamp(1rem, 2vw, 0.9vw);
       color: rgb(255, 255, 255);
       text-shadow: 5px 5px 5px rgba(0,0,0,.225);
       position: absolute;
@@ -82,6 +87,12 @@ $white: #f8f8f8;
       line-height: 1.7;
       z-index: 1;
       max-width: 60%;
+
+      @media (max-width: 40em) {
+        max-width: 90%;
+        left: 1rem;
+        position: relative;
+              }
     }
   
     .table {
@@ -138,10 +149,12 @@ $white: #f8f8f8;
         @media (max-width: 768px) {
           grid-template-columns: 1fr; /* Stacked layout for mobile */
           font-size: 0.9rem;
+          margin-bottom: 4rem;
         }
       
         @media (max-width: 480px) {
           font-size: 0.8rem;
+           margin-bottom: 4rem;
         }
       }
   

@@ -9,12 +9,12 @@ export default function About() {
       <AboutHero />
       {/*  <AboutSection /> */}
       <AboutResume />
-      <h4>Logo test</h4>
+      {/*  <h4>Logo test</h4>
       <img
         src='/images/logowoletebig.png'
         alt='Image 1'
         className={styles.logoimage}
-      />
+      /> */}
     </div>
   );
 }
