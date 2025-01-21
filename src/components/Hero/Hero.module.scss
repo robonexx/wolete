@@ -108,7 +108,7 @@ $warm-earth: #a4673f;
         color: #fafafa;
         padding-left: 1%;
       }
-      
+
       h1 {
         font-family: $font-headline;
         font-size: clamp(3.75rem, 5vw, 6rem);
@@ -126,11 +126,12 @@ $warm-earth: #a4673f;
         text-align: center;
         text-transform: uppercase;
         background-image: linear-gradient(
-          -225deg,
+          -125deg,
           $light-gold 0%,
-          $warm-earth 29%,
-          #850000 67%,
-          #005841 100%
+          $warm-earth 31%,
+          #850000 63%,
+          #005841 85%,
+          $light-gold 96%,
         );
         background-size: auto 100%;
         background-clip: border-box;
@@ -140,14 +141,14 @@ $warm-earth: #a4673f;
         text-fill-color: transparent;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        animation: textclip 2s linear infinite;
+        animation: textclip 6s linear infinite;
         display: inline-block;
         font-size: clamp(5rem, 8vw, 10rem);
       }
 
       @keyframes textclip {
         to {
-          background-position: 200% center;
+          background-position: -200% center;
         }
       }
 
