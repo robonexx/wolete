@@ -5,6 +5,11 @@
     font-family: times, serif;
     background-color: #20201f;
     z-index: -1;
+
+    @media (max-width: 40em) {
+      height: fit-content;
+      
+  }
   }
   
   .videoPlayer {
