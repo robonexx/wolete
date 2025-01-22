@@ -20,8 +20,8 @@ const AboutHero = () => {
           vibrant traditions{' '}
           <span className={styles.slant}>of Afrocentric culture</span>
         </div>
-        <a href='https://www.instagram.com/wooolete/' className={styles.btn}>
-          Connect on insta
+        <a href='/about/#video' className={styles.btn}>
+          Watch me move
         </a>
         <img src='/images/image1.JPG' alt='' className={styles.image} />
       </div>
