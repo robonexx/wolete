@@ -12,7 +12,7 @@ $font-text: var(--font-playfair);
     .name {
         color: #fff;
         text-shadow: 5px 5px 5px rgba(0,0,0,.225);
-        font-size: clamp(3vw, 4vw, 1vw);
+        font-size: clamp(1rem, 4vw, 1vw);
         font-weight: 100;
         font-family: $font-text;
         position: absolute;
@@ -92,14 +92,14 @@ $font-text: var(--font-playfair);
 
     .credit{
         position: absolute;
-        top: 10vh;
+        top: 10.65vh;
         left: 10%;
         cursor: pointer;
         z-index: 100;
 
         @media (max-width: 40em) {
            left: 5%;
-           top: 10.65vh;
+           top: 10vh;
         }
     }
     .credit a {

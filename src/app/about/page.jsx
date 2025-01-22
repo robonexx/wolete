@@ -10,6 +10,7 @@ export default function About() {
       <AboutHero />
       <AboutSection />
       <AboutVideo />
+      <h2>Resume:</h2>
       <AboutResume />
       {/*  <h4>Logo test</h4>
       <img
