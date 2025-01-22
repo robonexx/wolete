@@ -22,6 +22,10 @@ $font-text: var(--font-playfair);
       font-size: 2rem;
       padding: 2rem 0;
       font-family: var(--font-playfair);
+
+      @media (max-width: 60em) {
+        padding: 2rem 1rem;        
+     }
     }
 
 
