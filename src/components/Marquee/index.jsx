@@ -15,7 +15,7 @@ const Marquee = ({ images, folderPath = '/images/partners' }) => {
 
     gsap.to(marquee, {
       x: -totalWidth, // Scroll the entire width of the images
-      duration: 20, // Adjust this value to control speed
+      duration: 30, // Adjust this value to control speed
       ease: 'none',
       repeat: -1, // Infinite animation
       modifiers: {
