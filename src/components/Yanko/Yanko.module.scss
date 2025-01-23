@@ -1,0 +1,124 @@
+$font-headline: var(--font-fira-sans);
+$font-text: var(--font-playfair);
+
+$color-gradient-gold-btn: linear-gradient(120deg, #bf953f, #e1d55a, #aa771c);
+$color-gradient-golds-btn: linear-gradient(120deg, #aa771c, #e1d55a, #bf953f);
+
+.yanko {
+    position: relative;
+    min-height: 100vh;
+    height: fit-content;
+    font-family: $font-text; 
+    padding: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    @media (max-width: 40em) {
+        height: 100%;
+        min-height: 100svh;
+        padding: 3rem 0;
+     }
+  }
+
+  .wide {
+    width: 100svw;
+   text-align: center;
+    font-weight: 700;
+    padding: 4rem 2rem 1rem;
+    font-size: 8rem;
+    @media (max-width: 60em) {
+        font-size: 3rem;
+        line-height: 1;
+     }
+ }
+  
+  .text {
+    font-size: clamp(1.25rem, 4vw, 3vw);
+    color: rgb(234, 234, 234);
+    position: relative;
+    line-height: 60px;
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+    text-align: left;
+    align-content: center;
+    @media (max-width: 60em) {
+        line-height: 1.5;
+        width: 95%;
+        padding-left: 5%;
+     }
+
+     > span {
+        color: #f29100;
+        font-size: 6rem;
+        line-height: 60px;
+        @media (max-width: 60em) {
+          font-size: 2rem;
+          line-height: 1;
+       }
+     }
+  }
+  
+  .highlight {
+    height: auto;
+    width: 100px;
+    border-radius: 50%;
+  }
+
+  .highlighttwo {
+    position: relative;
+    height: auto;
+    width: 240px;
+    left: 50%;
+    transform: translate(-50%);
+    top: 0;
+    border-radius: 5px;
+    padding: 2rem;
+
+    @media (max-width: 60em) {
+
+        height: auto;
+      width: 300px;
+      object-fit: cover;
+        top: 0;
+   }
+  }
+
+  .highlightthree {
+    height: auto;
+    width: 180px;
+    border-radius: 5px;
+    @media (max-width: 60em) {
+      
+      width: 100%;
+   }
+  }
+  
+
+  .buttons {
+    width: 100%;
+    position: relative;
+    z-index: 10;
+    margin-top: 4rem;
+    display: grid;
+    place-content: center;
+  }
+
+
+.btnPrimary {
+  background: #f29100;
+  color: #121212;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1.25rem;
+  font-weight: 600;
+  font-family: var(--font-playfair);
+  transition: background-color 0.4s ease-in;
+  &:hover {
+    background:#206d2a;
+  }
+}
