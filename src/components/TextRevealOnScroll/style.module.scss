@@ -1,0 +1,21 @@
+.paragraph{
+    display: flex;
+    font-size: clamp(2rem, 3vw, 4rem);
+    line-height: 1;
+    padding: clamp(20px, 5vw, 40px);
+    max-width: 980px;
+    color: white;
+    flex-wrap: wrap;
+
+    .word{
+      position: relative;
+      margin-right: 12px;
+      margin-top: 12px;
+      
+      .shadow{
+        position: absolute;
+        opacity: 20%;
+      }
+    }
+    
+  }

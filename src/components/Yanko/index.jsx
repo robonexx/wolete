@@ -1,28 +1,9 @@
 'use client';
-import React, { useEffect, useRef } from 'react';
-import Link from 'next/link';
 import { gsap } from 'gsap';
 
 import styles from './Yanko.module.scss';
 
 const Yanko = () => {
-  useEffect(() => {
-    const tl = gsap.timeline({ delay: 0.1 });
-
-    tl.from(
-      buttonsRef.current.children,
-      {
-        y: 100,
-        opacity: 0,
-        duration: 0.8,
-        ease: 'power3.out',
-        stagger: 0.2,
-      },
-      '-=0.4'
-    );
-  }, []);
-
-  const buttonsRef = useRef(null);
   return (
     <div className={styles.yanko}>
       <h2 className={styles.wide}>Y3NKO Project</h2> <br />
@@ -44,7 +25,7 @@ const Yanko = () => {
         <span>Check out Y3NKO PROJECT</span> on instagram by clicking the button
         below. <br />
       </p>
-      <div ref={buttonsRef} className={styles.buttons}>
+      <div className={styles.buttons}>
         <button className={styles.btnPrimary}>
           {' '}
           <a
