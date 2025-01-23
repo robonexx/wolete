@@ -1,16 +1,19 @@
+$font-text: var(--font-playfair);
+
+$light-gold: #b8a054;
+
 .page {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   min-height: 100svh;
-  font-family: var(--font-fira-sans);
   padding: 10rem;
   background: linear-gradient(
     to bottom,
-    rgba(210, 174, 14, 0.481),
-    rgb(159, 39, 3),
-    rgb(19, 86, 9)
+    rgba(14, 14, 14, 0.481),
+    rgb(41, 6, 6),
+    rgb(15, 30, 13)
   );
 
   @media (max-width: 60em) {
@@ -21,15 +24,16 @@
     display: grid;
     place-content: center;
     width: 100%;
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
-    margin-top: 2rem;
+   border-radius: 20px;
+    margin-top: 4rem;
  background: linear-gradient(
       to bottom left,
       rgb(19, 86, 9) 20%,
       rgb(159, 39, 3),
       rgba(210, 174, 14, 0.481)
     ); 
+
+    filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(148, 11, 9, 0.823));
   }
 
   .image {
@@ -39,7 +43,7 @@
     object-fit: cover;
     top: 0;
     border-radius: 5px;
-    margin-bottom: 5rem;
+    margin-bottom: 6rem;
     filter: drop-shadow(2px 10px 10px goldenrod)
       drop-shadow(80px 10px 60px orangered);
 
@@ -57,9 +61,10 @@
   width: 100%;
   position: relative;
   z-index: 10;
-  margin-top: 4rem;
+  margin-top: 2rem;
   display: grid;
   place-content: center;
+  margin-bottom: 2rem;
 }
 
 .btnPrimary {
@@ -79,8 +84,18 @@
 
 
 .info {
-  margin-top: 2rem;
-  font-size: clamp(1.25rem, 2vw, 3rem);
+  font-size: clamp(1rem, 2vw, 2rem);
   padding: clamp(20px, 5vw, 40px);
     max-width: 980px;
+    font-family: var(--font-fira-sans);
+
+    span {
+      text-decoration: underline;
+      text-decoration-color: $light-gold;
+    }
+}
+
+.border {
+  border: 1px solid $light-gold;
+  border-radius: 20px;
 }

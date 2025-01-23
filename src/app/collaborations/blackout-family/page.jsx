@@ -4,7 +4,7 @@ import ParagraphWord from '@/components/TextRevealOnScroll/ParagraphWord';
 import ParagraphChar from '@/components/TextRevealOnScroll/CharacterChar';
 
 const paragraph =
-  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. ';
+  'Lorem ipsum #dolor# sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. ';
 
 const paragraph2 =
   'You can find more about our classes on SvenskaLag follow the link below. ';

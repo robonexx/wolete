@@ -22,12 +22,12 @@ export default function Ubuntu() {
           className={styles.image}
         />
       </div>
-      <Paragraph paragraph={paragraph} />
-      <div style={{ height: '20vh' }}></div>
+      <ParagraphWord paragraph={paragraph} />
+      <div style={{ height: '5vh' }}></div>
       <ParagraphWord paragraph={paragraph2} />
-      <div style={{ height: '20vh' }}></div>
+      <div style={{ height: '5vh' }}></div>
       <ParagraphWord paragraph={paragraph3} />
-      <div style={{ height: '10vh' }}></div>
+      <div style={{ height: '5vh' }}></div>
       <div className={styles.buttons}>
         <button className={styles.btnPrimary}>
           {' '}
@@ -47,12 +47,16 @@ export default function Ubuntu() {
         🩵MaarifaMondays 🩷TumbaTuesdays 💛 TendaThursdays
         <br />
         <br />
+      </p>
+      <p className={`${styles.info} ${styles.border}`}>
         Interested in buying the full block or a clip card? Send us a message in
         the app and we will send you payment method information.
-        <br />
-        <br />
-        ✨BOOK NOW - PAY LATER (January 25th)✨ Please note that all
-        pre-bookings will be binding after receiving booking confirmation on
+      </p>
+      <br />
+      <br />
+      <p className={styles.info}>
+        ✨<span>BOOK NOW - PAY LATER </span>(January 25th)✨ Please note that
+        all pre-bookings will be binding after receiving booking confirmation on
         January 20.
         <br />
         <br />
