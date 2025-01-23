@@ -8,6 +8,7 @@ import VideoWrapper from '@/components/VideoWrapper';
 import HomeSectionThree from '@/components/HomeSectionThree';
 import SliderSection from '@/components/SliderSection';
 import Marquee from '@/components/Marquee';
+import TextSection from '@/components/TextSection';
 
 const sponsorImages = [
   'Blackout.png',
@@ -43,6 +44,7 @@ export default function Home() {
         <HomeSectionOne />
         <VideoWrapper />
         <HomeSectionThree />
+        <TextSection />
         <Marquee images={sponsorImages} folderPath='/images/partners' />
         <SliderSection />
       </div>
