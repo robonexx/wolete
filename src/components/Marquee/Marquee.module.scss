@@ -1,0 +1,23 @@
+/* components/Marquee.module.scss */
+.marqueeWrapper {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    background: linear-gradient(120deg, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
+    padding: 20px 0;
+  }
+  
+  .marquee {
+    display: flex;
+    white-space: nowrap;
+    will-change: transform; /* Optimize animation performance */
+  }
+  
+  .marqueeImageWrapper {
+    margin-right: 30px; /* Spacing between images */
+  }
+  
+  .image {
+    object-fit: contain;
+  }
+  
