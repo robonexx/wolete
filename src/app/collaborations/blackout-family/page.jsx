@@ -12,7 +12,6 @@ const paragraph2 =
 export default function Blackout() {
   return (
     <div className={styles.page}>
-      <h1>Blackout Family</h1>
       <img
         src='/images/partners/Blackout.png'
         alt=''
