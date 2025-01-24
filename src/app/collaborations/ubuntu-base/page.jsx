@@ -2,7 +2,7 @@ import styles from './page.module.scss';
 import Paragraph from '@/components/TextRevealOnScroll/Paragraph';
 import ParagraphWord from '@/components/TextRevealOnScroll/ParagraphWord';
 import ParagraphChar from '@/components/TextRevealOnScroll/CharacterChar';
-import PageTransition from '@/components/PageTransition';
+
 
 const paragraph =
   ' Ubuntu Base aims to be the hub for the afro/swedish community in Stockholm. The aim is to contribute to the Swedish cultural scene and create a safe space for African cultural expression with a focus on shared dance- and music experiences.. ';
@@ -16,7 +16,6 @@ const paragraph3 =
 export default function Ubuntu() {
   return (
     <div className={styles.page}>
-      <PageTransition />
       <div className={styles.imageWrapper}>
         <img
           src='/images/partners/UBUNTU.png'
