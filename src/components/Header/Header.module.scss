@@ -108,7 +108,7 @@ $font-text: var(--font-playfair);
   position: absolute;
   top: 1.5rem;   
   right: 2rem;  
-  width: 30px;
+  width: 36px;
   height: 24px;
   z-index: 9999;
 
@@ -121,6 +121,7 @@ $font-text: var(--font-playfair);
     left: 0;
     right: 0;
     height: 3px;
+    width: 36px;
     background-color: $gold;
     transition: 0.4s;
     transform-origin: center;
@@ -138,7 +139,6 @@ $font-text: var(--font-playfair);
   border-radius: 50%;
 }
 
-// ========== FULLSCREEN MOBILE OVERLAY ========== //
 .mobileOverlay {
   position: fixed;
   top: 0;
@@ -149,7 +149,6 @@ $font-text: var(--font-playfair);
   transform: translateX(100%);
   opacity: 0;
   z-index: 999;
-  // GSAP will slide it to x: 0 and set autoAlpha: 1
 }
 
 .mobileNavList {
@@ -174,7 +173,6 @@ $font-text: var(--font-playfair);
   }
 }
 
-// Mobile dropdown styling
 .mobileDropdownToggle {
   cursor: pointer;
   display: flex;
@@ -198,7 +196,6 @@ $font-text: var(--font-playfair);
   }
 }
 
-// ========== MEDIA QUERIES ========== //
 @media (max-width: 900px) {
   .desktopNav {
     display: none;
