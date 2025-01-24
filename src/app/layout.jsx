@@ -1,6 +1,7 @@
 import { Fira_Sans, Playfair_Display } from 'next/font/google';
 import './globals.scss';
 import Header from '@/components/Header';
+import Sidebar from '@/components/sidebar/Sidebar';
 
 const fira = Fira_Sans({
   weight: ['300', '400', '500', '600', '700', '800', '900'], // your chosen weights
@@ -29,6 +30,7 @@ export default function RootLayout({ children }) {
     <html lang='en'>
       <body className={` ${fira.variable} ${playfair.variable}`}>
         <Header />
+        <Sidebar />
         {children}
       </body>
     </html>
