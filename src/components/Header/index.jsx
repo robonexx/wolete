@@ -77,13 +77,13 @@ export default function Header() {
 
     if (menuOpen) {
       gsap.to(lineTopRef.current, {
-        y: 9,
+        y: 10,
         rotation: 45,
         duration: 0.4,
         transformOrigin: 'center',
       });
       gsap.to(lineBottomRef.current, {
-        y: -9,
+        y: -10,
         rotation: -45,
         duration: 0.4,
         transformOrigin: 'center',

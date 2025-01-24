@@ -113,7 +113,7 @@ $font-text: var(--font-playfair);
   z-index: 9999;
 
   @media (max-width: 900px) {
-    display: block;
+    display: inline-block;
   }
 
   .line {
@@ -125,18 +125,25 @@ $font-text: var(--font-playfair);
     background-color: $gold;
     transition: 0.4s;
     transform-origin: center;
-
+  
     &:nth-of-type(1) {
-      top: 2;
+      top: 0;
+      transform: translateY(0);
     }
+  
     &:nth-of-type(2) {
-      bottom: 2;
+      bottom: 0;
+      transform: translateY(0);
     }
   }
-}
-
-.open {
-  border-radius: 50%;
+  
+  .hamburger.open .line:nth-of-type(1) {
+    transform: rotate(45deg);
+  }
+  
+  .hamburger.open .line:nth-of-type(2) {
+    transform: rotate(-45deg);
+  }
 }
 
 .mobileOverlay {
