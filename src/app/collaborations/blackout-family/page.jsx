@@ -1,7 +1,8 @@
+'use client';
+import { useEffect, useRef } from 'react';
 import styles from './page.module.scss';
-import Paragraph from '@/components/TextRevealOnScroll/Paragraph';
 import ParagraphWord from '@/components/TextRevealOnScroll/ParagraphWord';
-import ParagraphChar from '@/components/TextRevealOnScroll/CharacterChar';
+import { gsap } from 'gsap';
 
 const paragraph =
   '#Blackout# #Family# is a Swedish dance group specializing in #dancehall# and #Afro# #Fusion# . They offer #classes# and #workshops# for all ages, including kids as young as 3 years old and adults of all skill levels. Their adult classes blend #Female# #Dancehall# with #Afro# styles like #Amapiano# and #Ndombolo# , focusing on creativity and confidence. ';
@@ -11,9 +12,22 @@ const paragraph3 =
   'You can find more about our classes on SvenskaLag follow the link below. ';
 
 export default function Blackout() {
+  const imageRef = useRef(null);
+
+  useEffect(() => {
+    if (imageRef.current) {
+      gsap.fromTo(
+        imageRef.current,
+        { scale: 5, opacity: 0 },
+        { scale: 1, opacity: 1, duration: 2, ease: 'power3.out' }
+      );
+    }
+  }, []);
+
   return (
     <div className={styles.page}>
       <img
+        ref={imageRef}
         src='/images/partners/blackout.png'
         alt=''
         className={styles.image}
