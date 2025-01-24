@@ -4,24 +4,42 @@ import ParagraphWord from '@/components/TextRevealOnScroll/ParagraphWord';
 import ParagraphChar from '@/components/TextRevealOnScroll/CharacterChar';
 
 const paragraph =
-  'Lorem ipsum #dolor# sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. ';
-
+  '#Blackout# #Family# is a Swedish dance group specializing in #dancehall# and #Afro# #Fusion#. They offer #classes# and #workshops# for all ages, including kids as young as 3 years old and adults of all skill levels. Their adult classes blend #Female# #Dancehall# with #Afro# styles like #Amapiano# and #Ndombolo#, focusing on creativity and confidence. ';
 const paragraph2 =
+  'The group is known for #vibrant# performances at events like Urban Connection, aiming to #showcase# #dancehall# #culture#. Key member #Binta# #Blackout# leads workshops and has been featured in events like Streetstar Dance School Challenge.';
+const paragraph3 =
   'You can find more about our classes on SvenskaLag follow the link below. ';
 
 export default function Blackout() {
   return (
     <div className={styles.page}>
       <img
-        src='/images/partners/Blackout.png'
+        src='/images/partners/blackout.png'
         alt=''
         className={styles.image}
       />
-      <Paragraph paragraph={paragraph} />
-      <div style={{ height: '20vh' }}></div>
+      <div className={styles.blackoutHero}>
+        <div className={styles.credit}>
+          <a
+            href='https://www.instagram.com/blackoutfamily/'
+            className={styles.insta}
+          >
+            @blackoutfamily<sup>&#174;</sup>
+          </a>
+        </div>
+        <div className={styles.header}>
+          <a href='/about/#video' className={styles.btn}>
+            Connect on Instagram
+          </a>
+          <img src='/images/Blackout25.jpg' alt='' className={styles.image} />
+        </div>
+      </div>
       <ParagraphWord paragraph={paragraph} />
-      <div style={{ height: '20vh' }}></div>
-      <ParagraphChar paragraph={paragraph2} />
+      <div style={{ height: '5vh' }}></div>
+      <ParagraphWord paragraph={paragraph2} />
+      <div style={{ height: '5vh' }}></div>
+      <ParagraphWord paragraph={paragraph3} />
+      <div style={{ height: '5vh' }}></div>
       <div className={styles.buttons}>
         <button className={styles.btnPrimary}>
           {' '}
@@ -30,7 +48,7 @@ export default function Blackout() {
             target='_blank'
             rel='noopener noreferrer'
           >
-            Blackout on instagram
+            Classes with Blackout
           </a>
         </button>
       </div>
