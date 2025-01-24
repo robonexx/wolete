@@ -42,8 +42,11 @@ export default function Blackout() {
           </a>
         </div>
         <div className={styles.header}>
-          <a href='/about/#video' className={styles.btn}>
-            Connect on Instagram
+          <a
+            href='https://www.svenskalag.se/blackoutfamilyab/sida/103742/borja-i-kidsgrupp?fbclid=PAZXh0bgNhZW0CMTEAAaYNpNc8JcSNxfQTyfL7C96mHFPbFO6CmmGOkNY1f5EqNz4gDnb0aBv5UxY_aem_IbCpdL0OUjdzYUG1824Olw'
+            className={styles.btn}
+          >
+            Our Classes
           </a>
           <img src='/images/Blackout25.jpg' alt='' className={styles.image} />
         </div>
@@ -58,11 +61,11 @@ export default function Blackout() {
         <button className={styles.btnPrimary}>
           {' '}
           <a
-            href='https://www.svenskalag.se/blackoutfamilyab/sida/103742/borja-i-kidsgrupp?fbclid=PAZXh0bgNhZW0CMTEAAaYNpNc8JcSNxfQTyfL7C96mHFPbFO6CmmGOkNY1f5EqNz4gDnb0aBv5UxY_aem_IbCpdL0OUjdzYUG1824Olw'
+            href='https://www.instagram.com/blackoutfamily/'
             target='_blank'
             rel='noopener noreferrer'
           >
-            Classes with Blackout
+            Connect on Insta
           </a>
         </button>
       </div>
