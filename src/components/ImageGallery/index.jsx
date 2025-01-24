@@ -60,6 +60,13 @@ const ImageGallery = () => {
   return (
     <div className={styles.galleryWrapper}>
       <h2 className={styles.title}>Gallery</h2>
+      <p>
+        Explore the gallery to discover the dynamic artistry of Rebecca Wolete,
+        a dance artist merging modern and ancestral expressions. Each image
+        captures her vibrant passion for community, cultural celebration, and
+        the transformative power of movement. Dive in and experience the essence
+        of her creative journey.
+      </p>
 
       {/* Masonry List */}
       <div className={styles.masonryList}>
@@ -85,13 +92,14 @@ const ImageGallery = () => {
       <AnimatePresence>
         {selectedIndex !== null && (
           <motion.div
+            // Outer overlay
             className={styles.lightbox}
-            onClick={closeLightbox}
+            onClick={closeLightbox} // Clicking overlay => close
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
           >
-            {/* Blurred background */}
+            {/* Blurred background image */}
             <motion.div
               className={styles.lightboxBackground}
               style={{
@@ -99,15 +107,18 @@ const ImageGallery = () => {
               }}
             />
 
-            {/* Wrap the image + buttons in a content wrapper */}
+            {/* 
+              Inner wrapper for the actual image + buttons. 
+              onClick={e => e.stopPropagation()} ensures
+              that clicking inside won't close the overlay.
+            */}
             <motion.div
               className={styles.lightboxContent}
+              onClick={(e) => e.stopPropagation()}
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.9 }}
               transition={{ duration: 0.4 }}
-              onClick={(e) => e.stopPropagation()}
-              /* stopPropagation so clicking inside doesn't close */
             >
               {/* Close Button */}
               <button className={styles.closeButton} onClick={closeLightbox}>
@@ -124,6 +135,7 @@ const ImageGallery = () => {
                 <RiArrowRightCircleLine />
               </button>
 
+              {/* Main Image in the lightbox */}
               <Suspense fallback={<div>Loading...</div>}>
                 <Image
                   src={images[selectedIndex]}

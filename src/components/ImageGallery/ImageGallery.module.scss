@@ -1,11 +1,32 @@
+$font-text: var(--font-playfair);
+$light-gold: #B8A054;
+
 .galleryWrapper {
   padding: 2rem;
+  font-family: var(--font-playfair);
+
+  @media (max-width: 768px) {
+    padding: 1rem;
+  }
+
+p {
+  padding: 3rem 0;
+  letter-spacing: 1px;
+
+  @media (max-width: 768px) {
+    padding: 1rem 0;
+  }
+}
+
+
+
 }
 
 .title {
   margin-bottom: 2rem;
-  font-size: clamp(2rem, 8vw, 8rem);
+  font-size: clamp(3rem, 8vw, 8rem);
   text-align: center;
+  color: $light-gold;
 }
 
 /* Masonry parent container */
@@ -18,9 +39,11 @@
      You can reduce columns on smaller screens */
   @media (max-width: 768px) {
     column-count: 2;
+    column-gap: 0.5rem;
   }
   @media (max-width: 480px) {
-    column-count: 1;
+    column-count: 2;
+    column-gap: 0.25rem;
   }
 }
 
@@ -38,6 +61,10 @@
   /* You can add hover effects etc. */
   &:hover .image {
     transform: scale(1.05);
+  }
+
+  @media (max-width: 768px) {
+    margin-bottom: 0rem;
   }
 }
 
@@ -102,8 +129,13 @@
 }
 
 .closeButton {
-  top: 1rem;
+  top: 3rem;
   right: 1rem;
+
+  @media (max-width: 768px) {
+    top: 5rem;
+    right: 2rem;
+  }
 }
 
 .prevButton {
