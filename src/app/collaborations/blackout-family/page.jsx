@@ -4,7 +4,7 @@ import ParagraphWord from '@/components/TextRevealOnScroll/ParagraphWord';
 import ParagraphChar from '@/components/TextRevealOnScroll/CharacterChar';
 
 const paragraph =
-  '#Blackout# #Family# is a Swedish dance group specializing in #dancehall# and #Afro# #Fusion#. They offer #classes# and #workshops# for all ages, including kids as young as 3 years old and adults of all skill levels. Their adult classes blend #Female# #Dancehall# with #Afro# styles like #Amapiano# and #Ndombolo#, focusing on creativity and confidence. ';
+  '#Blackout# #Family# is a Swedish dance group specializing in #dancehall# and #Afro# #Fusion# . They offer #classes# and #workshops# for all ages, including kids as young as 3 years old and adults of all skill levels. Their adult classes blend #Female# #Dancehall# with #Afro# styles like #Amapiano# and #Ndombolo#, focusing on creativity and confidence. ';
 const paragraph2 =
   'The group is known for #vibrant# performances at events like Urban Connection, aiming to #showcase# #dancehall# #culture#. Key member #Binta# #Blackout# leads workshops and has been featured in events like Streetstar Dance School Challenge.';
 const paragraph3 =
