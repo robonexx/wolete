@@ -35,6 +35,7 @@ export default function Bookings() {
           />
         </div>
       </div>
+      <div style={{ height: '10vh' }}></div>
       <ParagraphWord paragraph={paragraph} />
       <div style={{ height: '5vh' }}></div>
       <div className={styles.bookingHero}>
@@ -42,6 +43,7 @@ export default function Bookings() {
           <img src='/images/book.png' alt='' className={styles.image} />
         </div>
       </div>
+       <div style={{ height: '10vh' }}></div>
       <div className={styles.buttons}>
         <button className={styles.btnPrimary}>
           {' '}
