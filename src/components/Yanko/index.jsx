@@ -8,15 +8,15 @@ const Yanko = () => {
   useEffect(() => {
     const timeline = gsap.timeline();
     timeline
-      .from(`.${styles.image}`, {
-        opacity: 0,
-        y: -200,
+      .to(`.${styles.image}`, {
+        opacity: 1,
+        y: 0,
         duration: 1,
         ease: 'power3.out',
       })
-      .from(
+      .to(
         `.${styles.text}`,
-        { opacity: 0, y: 200, duration: 2, delay: 0.5, ease: 'power3.out' },
+        { opacity: 1, y: 0, duration: 2, delay: 0.5, ease: 'power3.out' },
         '<'
       );
   }, []);
@@ -33,8 +33,8 @@ const Yanko = () => {
           <br />
           <span>Our mission</span>, <br />
           <br />
-          is to <span>educate people</span> on African dances and cultures and empower
-          artists from the
+          is to <span>educate people</span> on African dances and cultures and
+          empower artists from the
           <span>African continent and diaspora.</span>. <br />
           The aim is to provide artists with African heritage a platform to
           share their art and create a safe space for cultural exchange. <br />
