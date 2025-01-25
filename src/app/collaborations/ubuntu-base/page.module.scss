@@ -36,8 +36,8 @@ $light-gold: #b8a054;
     top: 0;
     border-radius: 5px;
     margin-bottom: 6rem;
-    filter: drop-shadow(2px 10px 10px rgba(137, 187, 88, 0.782))
-      drop-shadow(80px 10px 60px rgb(76, 50, 85));
+    filter: drop-shadow(10px 10px 10px rgba(219, 199, 19, 0.782)) drop-shadow(-10px -10px 10px rgba(219, 199, 19, 0.782))
+      drop-shadow(80px 10px 60px rgb(234, 5, 36))  drop-shadow(-80px -10px 60px rgb(67, 171, 7));
 
     @media (max-width: 60em) {
       height: auto;
