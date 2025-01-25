@@ -18,7 +18,7 @@ export default function Blackout() {
     if (imageRef.current) {
       gsap.fromTo(
         imageRef.current,
-        { scale: 5, opacity: 0 },
+        { scale: 0, opacity: 0 },
         { scale: 1, opacity: 1, duration: 2, ease: 'power3.out' }
       );
     }
@@ -30,7 +30,7 @@ export default function Blackout() {
         ref={imageRef}
         src='/images/partners/blackout.png'
         alt=''
-        className={styles.image}
+        className={styles.imageTop}
       />
       <div className={styles.blackoutHero}>
         <div className={styles.credit}>
@@ -65,7 +65,7 @@ export default function Blackout() {
             target='_blank'
             rel='noopener noreferrer'
           >
-            Connect on Insta
+            Connect on Instagram
           </a>
         </button>
       </div>
