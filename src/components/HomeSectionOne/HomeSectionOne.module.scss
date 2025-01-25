@@ -24,13 +24,13 @@ $font-text: var(--font-playfair);
     position: absolute;
     color: white;
     font-family: $font-text;
-    font-size: clamp(1.75rem, 2vw, 1vw);
+    font-size: clamp(1.55rem, 2vw, 1vw);
     margin-top: 6%;
     left: 44.5%;
 
     @media (max-width: 40em) {
         margin-top: 20vh;
-        left: 10%;
+        left: 1rem;
        color: white;
        font-weight: 700;
        text-shadow: 1px 2px black, 5px 5px 5px rgba(0, 0, 0, 0.579);
@@ -40,11 +40,12 @@ $font-text: var(--font-playfair);
   
   .aboutHead {
     position: absolute;
-    font-size: clamp(1.5rem, 3vw, 3.3vw);
+    font-size: clamp(1.25rem, 2.5vw, 3.3vw);
     font-family: $font-headline;
     color: $gold;
     margin-top: 12%;
-    left: 35%;
+    right: 1rem;
+    left: unset;
     line-height: 70px;
     z-index: 10;
     font-weight: 600;
