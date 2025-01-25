@@ -97,12 +97,19 @@ const Contact = () => {
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 0.4, delay: 0.4, ease: 'easeOut' }}
       >
-        Contact &
+        Contact
       </motion.h2>
       <motion.h2
         initial={{ x: -300, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 0.4, delay: 0.6, ease: 'easeOut' }}
+      >
+        Workshops
+      </motion.h2>
+      <motion.h2
+        initial={{ x: -300, opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
+        transition={{ duration: 0.4, delay: 0.8, ease: 'easeOut' }}
       >
         Bookings
       </motion.h2>
@@ -155,6 +162,7 @@ const Contact = () => {
             required
           >
             <option value='Bookings'>Bookings</option>
+            <option value='Workshops'>Workshops</option>
             <option value='Contact'>Contact</option>
           </select>
           <span className={styles.check_icon}>
@@ -171,7 +179,8 @@ const Contact = () => {
             minLength={20}
             maxLength={200}
             required
-          />
+
+          placeholder='Please share your question or request…'/>
           <span className={styles.check_icon}>
             <FcCheckmark />
           </span>

@@ -48,7 +48,7 @@ export default function Bookings() {
         <button className={styles.btnPrimary}>
           {' '}
           <a href='/contact' target='_blank' rel='noopener noreferrer'>
-            Connect
+            Contact & Bookings
           </a>
         </button>
       </div>
