@@ -28,7 +28,7 @@ export default function Blackout() {
     <div className={styles.page}>
       <img
         ref={imageRef}
-        src='/images/partners/blackout.png'
+        src='/images/partners/Blackout.png'
         alt=''
         className={styles.imageTop}
       />
