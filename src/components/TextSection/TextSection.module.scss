@@ -18,7 +18,7 @@ $white: #f8f8f8;
     height:fit-content;
     font-family: $font-text; 
     padding:2rem 10rem;
-    background: radial-gradient(circle, $light-gold 10%, rgba(45,41,37,1) 50%, rgb(14, 14, 14) 100%);
+    background: #0c0c0c;
     @media (max-width: 40em) {
         height: 100%;
         min-height: fit-content;

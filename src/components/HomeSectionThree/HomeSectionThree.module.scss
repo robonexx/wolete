@@ -54,7 +54,7 @@ $light-gold: #B8A054;
   .highlighttwo {
     height: auto;
     width: 240px;
-    border-radius: 5px;
+    border-radius: 10px;
 
     @media (max-width: 60em) {
       height: 100px;
@@ -67,9 +67,9 @@ $light-gold: #B8A054;
   .highlightthree {
     height: auto;
     width: 180px;
-    border-radius: 5px;
-    @media (max-width: 60em) {
-      
+    margin-top: 1rem;
+    border-radius: 10px;
+    @media (max-width: 60em) {      
       width: 100%;
    }
   }
