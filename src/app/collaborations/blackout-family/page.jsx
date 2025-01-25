@@ -9,7 +9,7 @@ const paragraph =
 const paragraph2 =
   'The group is known for #vibrant# performances at events like Urban Connection, aiming to #showcase# #dancehall# #culture# . Key member #Binta# #Blackout# leads workshops and has been featured in events like Streetstar Dance School Challenge.';
 const paragraph3 =
-  'You can find more about our classes on SvenskaLag follow the link below. ';
+  'You can connect with #Blackout# on #Instagram# by following the link below';
 
 export default function Blackout() {
   const imageRef = useRef(null);

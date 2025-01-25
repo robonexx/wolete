@@ -30,6 +30,8 @@ $font-text: var(--font-playfair);
     border-radius: 5px;
     padding: 2rem;
     opacity: 1;
+    filter: drop-shadow(10px 10px 1px rgba(244, 47, 8, 0.782))
+      drop-shadow(10px 10px 0px rgb(15, 93, 8));
 
     @media (max-width: 1400px) {
       width: 40%;

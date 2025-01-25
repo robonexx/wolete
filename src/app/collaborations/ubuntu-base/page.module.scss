@@ -26,14 +26,6 @@ $light-gold: #b8a054;
     width: 100%;
    border-radius: 20px;
     margin-top: 4rem;
- background: linear-gradient(
-      to bottom left,
-      rgb(19, 86, 9) 20%,
-      rgb(159, 39, 3),
-      rgba(210, 174, 14, 0.481)
-    ); 
-
-    filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(148, 11, 9, 0.823));
   }
 
   .image {
@@ -44,8 +36,8 @@ $light-gold: #b8a054;
     top: 0;
     border-radius: 5px;
     margin-bottom: 6rem;
-    filter: drop-shadow(2px 10px 10px goldenrod)
-      drop-shadow(80px 10px 60px orangered);
+    filter: drop-shadow(2px 10px 10px rgba(137, 187, 88, 0.782))
+      drop-shadow(80px 10px 60px rgb(76, 50, 85));
 
     @media (max-width: 60em) {
       height: auto;
