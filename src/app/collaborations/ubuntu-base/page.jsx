@@ -1,8 +1,9 @@
-import styles from './page.module.scss';
-import Paragraph from '@/components/TextRevealOnScroll/Paragraph';
+'use client';
+import { useEffect, useRef } from 'react';
 import ParagraphWord from '@/components/TextRevealOnScroll/ParagraphWord';
-import ParagraphChar from '@/components/TextRevealOnScroll/CharacterChar';
+import { gsap } from 'gsap';
 
+import styles from './page.module.scss';
 
 const paragraph =
   ' Ubuntu Base aims to be the hub for the afro/swedish community in Stockholm. The aim is to contribute to the Swedish cultural scene and create a safe space for African cultural expression with a focus on shared dance- and music experiences.. ';
@@ -14,21 +15,43 @@ const paragraph3 =
   'You can find more about UBUNTU BASE classes on the app, click the button below and come join us! ';
 
 export default function Ubuntu() {
+  const imageRef = useRef(null);
+  const textRef = useRef(null);
+
+  useEffect(() => {
+    if (imageRef.current) {
+      gsap.fromTo(
+        imageRef.current,
+        { scale: 0, opacity: 0, rotate: 360 },
+        { scale: 1, opacity: 1, duration: 2, rotate: 0, ease: 'power3.out' }
+      );
+    }
+    if (textRef.current) {
+      gsap.fromTo(
+        textRef.current,
+        { y: 200, opacity: 0 },
+        { y: 0, opacity: 1, duration: 2, rotate: 0, ease: 'power3.out' }
+      );
+    }
+  }, []);
   return (
     <div className={styles.page}>
       <div className={styles.imageWrapper}>
         <img
+          ref={imageRef}
           src='/images/partners/UBUNTU.png'
           alt=''
           className={styles.image}
         />
       </div>
-      <ParagraphWord paragraph={paragraph} />
-      <div style={{ height: '5vh' }}></div>
-      <ParagraphWord paragraph={paragraph2} />
-      <div style={{ height: '5vh' }}></div>
-      <ParagraphWord paragraph={paragraph3} />
-      <div style={{ height: '5vh' }}></div>
+      <div ref={textRef}>
+        <ParagraphWord paragraph={paragraph} />
+        <div style={{ height: '5vh' }}></div>
+        <ParagraphWord paragraph={paragraph2} />
+        <div style={{ height: '5vh' }}></div>
+        <ParagraphWord paragraph={paragraph3} />
+        <div style={{ height: '5vh' }}></div>
+      </div>
       <div className={styles.buttons}>
         <button className={styles.btnPrimary}>
           {' '}

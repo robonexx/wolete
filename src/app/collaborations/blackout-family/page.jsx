@@ -1,7 +1,7 @@
 'use client';
 import { useEffect, useRef } from 'react';
-import styles from './page.module.scss';
 import ParagraphWord from '@/components/TextRevealOnScroll/ParagraphWord';
+import styles from './page.module.scss';
 import { gsap } from 'gsap';
 
 const paragraph =
