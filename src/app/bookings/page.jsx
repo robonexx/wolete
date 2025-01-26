@@ -10,11 +10,19 @@ const paragraph =
 
 export default function Bookings() {
   const imageRef = useRef(null);
+  const imageRef2 = useRef(null);
 
   useEffect(() => {
     if (imageRef.current) {
       gsap.fromTo(
         imageRef.current,
+        { scale: 5, opacity: 0 },
+        { scale: 1, opacity: 1, duration: 2, ease: 'power3.out' }
+      );
+    }
+    if (imageRef2.current) {
+      gsap.fromTo(
+        imageRef2.current,
         { scale: 5, opacity: 0 },
         { scale: 1, opacity: 1, duration: 2, ease: 'power3.out' }
       );
@@ -32,21 +40,21 @@ export default function Bookings() {
         <div className={styles.imageWrapper}>
           <img
             src='/images/weekly.png'
-            alt=''
+            alt='Weekly'
             ref={imageRef}
             className={styles.image}
           />
         </div>
         <div className={styles.imageWrapper}>
-          <img src='/images/book.png' alt='' className={styles.image} />
+          <img
+            src='/images/book.png'
+            alt='Book'
+            ref={imageRef2}
+            className={styles.image}
+          />
         </div>
       </div>
-     {/*  <div className={styles.bookingHero}>
-        <div className={styles.header}>
-          <img src='/images/book.png' alt='' className={styles.image} />
-        </div>
-      </div> */}
-       <div style={{ height: '10vh' }}></div>
+      <div style={{ height: '10vh' }}></div>
       <div className={styles.buttons}>
         <button className={styles.btnPrimary}>
           {' '}

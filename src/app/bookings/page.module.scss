@@ -37,54 +37,42 @@ $white: #f8f8f8;
   padding-bottom: 25rem;
 
   @media (max-width: 60em) {
-    padding: 4rem 1rem;
+    padding: 10rem 1rem;
     padding-bottom: 20rem;
   }
   
- .bookingHero {
-  position: relative;
-  height: 100%;
-  width: 80svw;
-  padding-top: 0;
-  margin-bottom: 6rem;
-
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
-
-  
-  @media (max-width: 60em) {
-    grid-template-columns: 1fr;  
-    height: auto;                
-    
-    .imageWrapper {
-     width: 100%;
-      top: auto;
-      left: auto;
-      transform: none;
-      margin: 0 auto;  
-    }
-  }
-
-  .imageWrapper {
+  .bookingHero {
     position: relative;
-    width: 80%;
-    height: 100%;
-    border-radius: 20px;
-
-    .image {
+    width: 80%; // Ensures it takes 80% of the viewport width or container
+    max-width: 80svw; // Avoids overflowing the screen
+    margin: 0 auto; // Centers the grid on the page
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); // 2 columns for desktop
+    gap: 2rem;
+  
+    @media (max-width: 60em) {
+      grid-template-columns: 1fr; // Stacks images on mobile
+      width: 100%; // Images take full width on mobile
+      gap: 1rem; // Reduce the gap between images
+    }
+  
+    .imageWrapper {
+      position: relative;
+      width: 100%; // Each grid item takes full column width
+      height: auto; // Ensures proper height scaling for images
       border-radius: 20px;
-      object-fit: cover;
-      height: 100%;
-      width: auto;
-
-      @media (max-width: 80em) {
-        width: 90svw;
-        object-fit: contain;
+      overflow: hidden; // Clips any overflow due to border-radius
+  
+      .image {
+        display: block; // Removes inline image gaps
+        width: 100%; // Images take full width of their wrapper
+        height: auto; // Maintains aspect ratio
+        border-radius: 20px;
+        object-fit: cover; // Ensures the image covers the wrapper nicely
       }
     }
   }
-}
+  
 
 }
 
