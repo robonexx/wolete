@@ -1,20 +1,63 @@
-.page {
-    display: flex;
-    flex-direction: column;
-    min-height: 100svh;
+  .page {
+    padding: 10rem;
     font-family: var(--font-fira-sans);
     background: radial-gradient(circle, rgba(6,4,29,1), rgba(45,41,37,1), rgb(14, 14, 14));
-    padding: 10rem;
+    color: #fff;
+    background: radial-gradient(
+      circle,
+      rgba(6, 4, 29, 1),
+      rgba(45, 41, 37, 1),
+      rgb(14, 14, 14)
+    );
 
-    h1 {
-        width: 100%;
-        margin-top: 200px;
-        text-align: center;
+    @media (max-width: 60em) {
+      padding: 10rem 1rem;        
+   }
+  
+    h1,
+    h2 {
+      text-align: center;
+      margin-bottom: 1rem;
+      font-size: clamp(2rem, 4vw, 3rem);
+    }
+  
+    p {
+      text-align: center;
+      margin-bottom: 2rem;
+      font-size: clamp(1rem, 1.5vw, 1.25rem);
+      line-height: 1.8;
+
+      
+    }
+  
+    .header {
+      margin-bottom: 3rem;
+  
+      p {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+    }
+  
+    .section {
+      margin-bottom: 3rem;
+  
+      .videos {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 2rem;
+        justify-items: center;
+  
+        iframe {
+          width: 100%;
+          max-width: 560px;
+          aspect-ratio: 16 / 9;
+          border: none;
+          border-radius: 10px;
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+      }
     }
   }
   
-  @media (prefers-color-scheme: dark) {
-    .page {
-    }
-  }
-  
+
