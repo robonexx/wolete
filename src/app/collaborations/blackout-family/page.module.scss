@@ -41,132 +41,123 @@ $white: #f8f8f8;
     padding-bottom: 20rem;
   }
 
- 
-
-  .imageTop{
+  .imageTop {
     object-fit: cover;
     height: 100%;
     width: 680px;
-    filter: drop-shadow(
-      1px 2px 8px rgb(217, 217, 217)
-    );
+    filter: drop-shadow(5px 5px 10px rgb(0, 0, 0));
 
     @media (max-width: 80em) {
       width: 80vw;
       height: auto;
-      
-   }
+    }
   }
 
-  
   .blackoutHero {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    margin-bottom: 6rem;
+
+    @media (max-width: 60em) {
+      height: 80vh;
+    }
+
+    .header {
       position: relative;
-      height: 100vh;
+      margin: 0 auto;
+      width: 60%;
+      height: 80vh;
+      border-radius: 20px;
+      text-align: center;
+
+      @media (max-width: 80em) {
+        width: 95%;
+        height: 70vh;
+      }
+    }
+
+    .image {
+      object-fit: contain;
+      height: 100%;
       width: 100%;
-      margin-bottom: 6rem;
 
-      @media (max-width: 60em) {
-        height: 80vh;
-      }    
-    
-  
-      .header{
-          position: absolute;
-          top: 4%;
-          left: 50%;
-          transform: translateX(-50%);
-          width: 90%;
-          height: 100%;
-          border-radius: 20px;
-          text-align: center;
+      @media (max-width: 80em) {
+        object-fit: contain;
       }
-      .image{
-          object-fit: cover;
-          object-position: center 40%;
-          height: 100%;
-          width: 100%;
+    }
 
-          @media (max-width: 80em) {
-            object-fit: contain;
-         }
+    .btn {
+      position: relative;
+      margin-top: 2rem;
+      background-color: white;
+      display: inline-block;
+      cursor: pointer;
+      color: black;
+      font-family: $font-headline;
+      font-size: 16px;
+      padding: 16px 32px;
+      border-radius: 20px;
+      text-decoration: none;
+      text-transform: uppercase;
+      z-index: 2;
+      transition: all 0.4s ease-in;
+    }
+    .btn:hover {
+      background-color: black;
+      color: white;
+      border: 1px solid white;
+    }
+
+    .credit {
+      position: relative;
+      cursor: pointer;
+      z-index: 100;
+
+      @media (max-width: 40em) {
+        left: 0;
+        top: 5vh;
       }
-      
-      .btn {
-          position: absolute;
-          top: 87.5%;
-          left: 50%;
-          transform: translateX(-50%);
-          background-color: white;
-          display: inline-block;
-          cursor: pointer;
-          color: black;
-          font-family: $font-headline;
-          font-size: 16px;
-          padding: 16px 31px;
-          border-radius: 20px;
-          text-decoration: none;
-          text-transform: uppercase;
-          z-index: 2;
-          transition: all 0.4s ease-in;
+    }
+    .credit a {
+      position: relative;
+      color: #dcdbdb;
+      text-decoration: none;
+      font-family: $font-text;
+      text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.225);
+
+      @media (max-width: 40em) {
+        left: 5%;
       }
-      .btn:hover {
-          background-color: black;
-          color: white;
-          border: 1px solid white;
+    }
+
+    .credit a:hover {
+      color: #b8a054;
+
+      @media (max-width: 40em) {
+        color: #000000;
       }
-  
-      .credit{
-          position: absolute;
-          top: 10.65vh;
-          left: 10%;
-          cursor: pointer;
-          z-index: 100;
-  
-          @media (max-width: 40em) {
-             left: 5%;
-             top: 10vh;
-          }
-      }
-      .credit a {
-          position: relative;
-          color: #dcdbdb;
-          text-decoration: none;
-          font-family: $font-text;
-          text-shadow: 5px 5px 5px rgba(0,0,0,.225);
-          
-          @media (max-width: 40em) {
-              left: 5%;
-             
-           }
-      }
-  
-      .credit a:hover{
-          color: #B8A054;
-  
-          @media (max-width: 40em) {
-              color: #000000;
-           }
-      }
-  
-      .credit:after {
-          content: '';
-          position: absolute;
-          width: 100%;
-          transform: scaleX(0);
-          height: 1px;
-          bottom: 0;
-          left: 0;
-          background-color: white;
-          transform-origin: bottom right;
-          transition: transform 1s ease-out;
-      }
-      .credit:hover:after {
-          transform: scaleX(1);
-          transform-origin: bottom left;
-      }
-      sup{
-          font-size: 1vw;
-      }
+    }
+
+    .credit:after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      transform: scaleX(0);
+      height: 1px;
+      bottom: 0;
+      left: 0;
+      background-color: white;
+      transform-origin: bottom right;
+      transition: transform 1s ease-out;
+    }
+    .credit:hover:after {
+      transform: scaleX(1);
+      transform-origin: bottom left;
+    }
+    sup {
+      font-size: 1vw;
+    }
   }
 }
 
@@ -178,7 +169,6 @@ $white: #f8f8f8;
   display: grid;
   place-content: center;
 }
-
 
 .btnPrimary {
   background: $color-gradient-gold-btn;
