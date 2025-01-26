@@ -25,8 +25,11 @@ export default function Bookings() {
     <div className={styles.page}>
       <AnimatedText text='Workshops &' el='span' />
       <AnimatedText text='Bookings' el='span' />
+      <div style={{ height: '10vh' }}></div>
+      <ParagraphWord paragraph={paragraph} />
+      <div style={{ height: '5vh' }}></div>
       <div className={styles.bookingHero}>
-        <div className={styles.header}>
+        <div className={styles.imageWrapper}>
           <img
             src='/images/weekly.png'
             alt=''
@@ -34,15 +37,15 @@ export default function Bookings() {
             className={styles.image}
           />
         </div>
-      </div>
-      <div style={{ height: '10vh' }}></div>
-      <ParagraphWord paragraph={paragraph} />
-      <div style={{ height: '5vh' }}></div>
-      <div className={styles.bookingHero}>
-        <div className={styles.header}>
+        <div className={styles.imageWrapper}>
           <img src='/images/book.png' alt='' className={styles.image} />
         </div>
       </div>
+     {/*  <div className={styles.bookingHero}>
+        <div className={styles.header}>
+          <img src='/images/book.png' alt='' className={styles.image} />
+        </div>
+      </div> */}
        <div style={{ height: '10vh' }}></div>
       <div className={styles.buttons}>
         <button className={styles.btnPrimary}>

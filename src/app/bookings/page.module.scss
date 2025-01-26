@@ -40,49 +40,52 @@ $white: #f8f8f8;
     padding: 4rem 1rem;
     padding-bottom: 20rem;
   }
-
- > :nth-child(1) {
-  margin-top: 5rem;
- }
- 
   
-  .bookingHero {
-      position: relative;
-      height: 100%;
-      width: 80svw;
-      padding-top: 0;
-      margin-bottom: 6rem;
+ .bookingHero {
+  position: relative;
+  height: 100%;
+  width: 80svw;
+  padding-top: 0;
+  margin-bottom: 6rem;
 
-      @media (max-width: 60em) {
-        height: 80vh;
-      }
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+
   
-      .header{
-          position: relative;
-          top: 10vh;
-          left: 50%;
-          transform: translateX(-50%);
-          width: fit-content;
-          height: 100%;
-          border-radius: 20px;
-
-          :nth-of-type(1) {
-            top: 20vh;
-          }
-
-          .image{
-            border-radius: 20px;
-              object-fit: cover;
-              height: 100%;
-              width: 60svw;
+  @media (max-width: 60em) {
+    grid-template-columns: 1fr;  
+    height: auto;                
     
-              @media (max-width: 80em) {
-                width: 100svw;
-                object-fit: contain;
-             }
-          }
+    .imageWrapper {
+     width: 100%;
+      top: auto;
+      left: auto;
+      transform: none;
+      margin: 0 auto;  
+    }
+  }
+
+  .imageWrapper {
+    position: relative;
+    width: 80%;
+    height: 100%;
+    border-radius: 20px;
+
+    .image {
+      border-radius: 20px;
+      object-fit: cover;
+      height: 100%;
+      width: auto;
+
+      @media (max-width: 80em) {
+        width: 90svw;
+        object-fit: contain;
       }
-      }
+    }
+  }
+}
+
 }
 
 .buttons {

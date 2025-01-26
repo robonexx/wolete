@@ -25,9 +25,9 @@ $light-gold: #B8A054;
     position: relative;
     margin-right: 12px;
     margin-top: 12px;
-    color: $light-gold; // Customize this to your desired special word color
-    font-weight: bold; // Add any other desired styling for special words
-    font-size: clamp(1.75rem, 2.5vw, 3.5rem);
+    color: $light-gold;
+    font-weight: bold; 
+    font-size: clamp(1.25rem, 2vw, 3rem);
     .shadow {
       position: absolute;
       opacity: 20%;

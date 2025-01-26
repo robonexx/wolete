@@ -39,7 +39,7 @@ export default function Ubuntu() {
       <div className={styles.imageWrapper}>
         <img
           ref={imageRef}
-          src='/images/partners/UBUNTU.png'
+          src='/images/partners/UBUNTUyellow.png'
           alt=''
           className={styles.image}
         />
@@ -53,6 +53,26 @@ export default function Ubuntu() {
         <div style={{ height: '5vh' }}></div>
       </div>
       <div className={styles.buttons}>
+        <button className={styles.btnPrimary}>
+          {' '}
+          <a
+            href='https://www.instagram.com/ubuntu.base'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            UBUNTU On Instagram
+          </a>
+        </button>
+        <button className={styles.btnPrimary}>
+          {' '}
+          <a
+            href='https://linktr.ee/ubuntu.base'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            UBUNTU Linktree
+          </a>
+        </button>
         <button className={styles.btnPrimary}>
           {' '}
           <a
@@ -93,18 +113,7 @@ export default function Ubuntu() {
         <br />
         MORE INFO + REGISTRATION in Ubuntu app
       </p>
-      <div className={styles.buttons}>
-        <button className={styles.btnPrimary}>
-          {' '}
-          <a
-            href='https://www.mobileapp.app/to/IGIEAVC?ref=cl'
-            target='_blank'
-            rel='noopener noreferrer'
-          >
-            UBUNTU APP
-          </a>
-        </button>
-      </div>
+      <div className={styles.buttons}></div>
     </div>
   );
 }

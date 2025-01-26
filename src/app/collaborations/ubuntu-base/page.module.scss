@@ -36,8 +36,8 @@ $light-gold: #b8a054;
     top: 0;
     border-radius: 5px;
     margin-bottom: 6rem;
-    filter: drop-shadow(10px 10px 10px rgba(219, 199, 19, 0.782)) drop-shadow(-10px -10px 10px rgba(219, 199, 19, 0.782))
-      drop-shadow(80px 10px 60px rgb(234, 5, 36))  drop-shadow(-80px -10px 60px rgb(67, 171, 7));
+    filter: drop-shadow(10px 10px 10px rgba(219, 199, 19, 0.19)) drop-shadow(-10px -10px 10px rgba(219, 199, 19, 0.248))
+      drop-shadow(80px 10px 60px rgba(234, 5, 35, 0.407))  drop-shadow(-80px -10px 60px rgba(67, 171, 7, 0.259));
 
     @media (max-width: 60em) {
       height: auto;
@@ -54,9 +54,14 @@ $light-gold: #b8a054;
   position: relative;
   z-index: 10;
   margin-top: 2rem;
-  display: grid;
+  display: flex;
   place-content: center;
+  gap: 2rem;
   margin-bottom: 2rem;
+
+  @media (max-width: 80em) {
+    flex-direction: column;
+   }
 }
 
 .btnPrimary {
@@ -69,6 +74,17 @@ $light-gold: #b8a054;
   font-size: 1rem;
   font-weight: 600;
   transition: background-color 0.4s ease-in;
+
+  @media (max-width: 80em) {
+    width: 60%;
+    align-self: center;
+   }
+
+   @media (max-width: 40em) {
+    width: 90%;
+    align-self: center;
+   }
+
   &:hover {
     background: #f8f8f8;
   }
