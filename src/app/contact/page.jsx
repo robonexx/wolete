@@ -116,6 +116,15 @@ const Contact = () => {
 
       {/* FORM === FORM */}
 
+      <motion.h3
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1, delay: 1.2, ease: 'easeOut' }}
+      >
+        Want to collaborate with me or book any of the services provided on this
+        page? Get in touch!{' '}
+      </motion.h3>
+
       <motion.form
         className={styles.contact_form}
         noValidate
@@ -123,7 +132,7 @@ const Contact = () => {
         onSubmit={handleSubmit}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 0.6, delay: 1, ease: 'easeOut' }}
+        transition={{ duration: 1, delay: 1.4, ease: 'easeOut' }}
       >
         <label>Name</label>
         <div className={styles.input_field}>
@@ -179,8 +188,8 @@ const Contact = () => {
             minLength={20}
             maxLength={200}
             required
-
-          placeholder='Please share your question or request…'/>
+            placeholder='Please share your question or request…'
+          />
           <span className={styles.check_icon}>
             <FcCheckmark />
           </span>

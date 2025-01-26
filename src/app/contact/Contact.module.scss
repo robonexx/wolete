@@ -13,20 +13,41 @@ $warm-earth: #a4673f;
   h2 {
     margin: 0 auto;
     padding: 0 2rem;
-    width: 80%;
+    width: 90%;
     font-size: clamp(2rem, 4vw, 6rem);
     color: #f8f8f8;
     text-transform: uppercase;
     font-family: $font-text;
 
+    &:first-of-type {
+      color: $light-gold;
+    }
+
     &:last-of-type {
       margin-bottom: 4rem;
     }
+
+    @media (max-width: 60em) {
+      padding: 0 1.5rem;       
+   }
+  }
+
+  h3 {
+    margin: 0 auto;
+    padding: 0 2rem;
+    font-size: clamp(1rem, 2vw, 2rem);
+    width: 90%;
+    font-family: $font-headline;
+    margin-bottom: 4rem;
+
+    @media (max-width: 60em) {
+      padding: 0 1.5rem;       
+   }
   }
 
   .contact_form {
     margin: 0 auto;
-    width: 80%;
+    width: 100%;
     height: 600px;
     display: flex;
     flex-direction: column;
