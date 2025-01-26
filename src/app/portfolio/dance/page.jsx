@@ -22,18 +22,24 @@ export default function Dance() {
           storytelling through movement.
         </p>
         <div className={styles.videos}>
-          <iframe
-            src='https://www.youtube.com/embed/OHD4KhU4Ux4?si=SBxgQAojWEczUZJv'
-            title='Production Video 1'
-            allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
-            allowFullScreen
-          ></iframe>
-          <iframe
-            src='https://www.youtube.com/embed/fBlfHMvVDr0?si=inj7Bji01IrX-P1I'
-            title='Production Video 2'
-            allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
-            allowFullScreen
-          ></iframe>
+          <div>
+            <h2>Live performances</h2>
+            <iframe
+              src='https://www.youtube.com/embed/OHD4KhU4Ux4?si=SBxgQAojWEczUZJv'
+              title='Production Video 1'
+              allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+              allowFullScreen
+            ></iframe>
+          </div>
+          <div>
+            <h2>Video productions</h2>
+            <iframe
+              src='https://www.youtube.com/embed/fBlfHMvVDr0?si=inj7Bji01IrX-P1I'
+              title='Production Video 2'
+              allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+              allowFullScreen
+            ></iframe>
+          </div>
         </div>
       </section>
 
