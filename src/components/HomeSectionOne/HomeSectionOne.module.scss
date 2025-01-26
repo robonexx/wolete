@@ -24,11 +24,12 @@ $font-text: var(--font-playfair);
     position: absolute;
     color: white;
     font-family: $font-text;
-    font-size: clamp(1.55rem, 2vw, 1vw);
+    font-size: clamp(3rem, 3vw, 5vw);
     margin-top: 6%;
-    left: 44.5%;
+    left: 40%;
 
     @media (max-width: 40em) {
+      font-size: clamp(1.55rem, 2vw, 1vw);
         margin-top: 20vh;
         left: 1rem;
        color: white;
@@ -44,8 +45,8 @@ $font-text: var(--font-playfair);
     font-family: $font-headline;
     color: $gold;
     margin-top: 12%;
-    right: 1rem;
-    left: unset;
+   left: 50%;
+   transform: translateX(-50%);
     line-height: 70px;
     z-index: 10;
     font-weight: 600;
@@ -55,6 +56,7 @@ $font-text: var(--font-playfair);
         text-shadow: 1px 1px rgb(40, 17, 77), 5px 5px 5px rgba(0, 0, 0, 0.579);
         line-height: 30px;
         left: 40%;
+        transform: translateX(0);
         z-index: 100;
     }
   }

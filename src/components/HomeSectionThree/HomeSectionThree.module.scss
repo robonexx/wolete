@@ -20,7 +20,7 @@ $light-gold: #B8A054;
   }
   
   .text {
-    font-size: clamp(1.25rem, 4vw, 3vw);
+    font-size: clamp(1rem, 3vw, 4vw);
     color: rgb(234, 234, 234);
     position: relative;
     line-height: 50px;
@@ -28,18 +28,21 @@ $light-gold: #B8A054;
     display: block;
     text-align: left;
     align-content: center;
+    text-align: start; 
+
     @media (max-width: 60em) {
         line-height: 1.5;
-        width: 95%;
+        width: 90%;
         padding-left: 5%;
+        padding-right: 5%;
      }
 
      > span {
         color: $light-gold;
-        font-size: 6rem;
+        font-size: clamp(1.5rem, 4vw, 5vw);
         line-height: 60px;
         @media (max-width: 60em) {
-          font-size: 2rem;
+           
           line-height: 1;
        }
      }
@@ -53,22 +56,25 @@ $light-gold: #B8A054;
 
   .highlighttwo {
     height: auto;
-    width: 240px;
-    border-radius: 10px;
+    width: 120px;
+    border-radius: 20px;
+    margin: 0.2rem;
 
     @media (max-width: 60em) {
-      height: 100px;
-      width: 240px;
-      object-fit: cover;
-      float: right;
+      height: auto;
+      width: 140px;
+      object-fit: contain;
+      float: left;
    }
   }
 
   .highlightthree {
-    height: auto;
-    width: 180px;
+    height: 140px;
+    width: 140px;
+    margin: 0.2rem;
+    object-fit: cover;
     margin-top: 1rem;
-    border-radius: 10px;
+    border-radius: 50%;
     @media (max-width: 60em) {      
       width: 100%;
    }
