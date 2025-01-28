@@ -6,11 +6,15 @@ $light-gold: #B8A054;
 .homeSectionThree {
     position: relative;
     min-height: 100vh;
-    height:fit-content;
+    height: fit-content;
     font-family: $font-text; 
     background: rgb(6,4,29);
     background: radial-gradient(circle, rgba(6,4,29,1), rgba(45,41,37,1), rgb(14, 14, 14));
     padding: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
     @media (max-width: 40em) {
         height: 100%;
@@ -24,17 +28,19 @@ $light-gold: #B8A054;
     color: rgb(234, 234, 234);
     position: relative;
     line-height: 50px;
-    width: 90%;
+    max-width: 90vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
     display: block;
-    text-align: left;
-    align-content: center;
-    text-align: start; 
+    text-align: center;
+    
 
     @media (max-width: 60em) {
         line-height: 1.5;
-        width: 90%;
-        padding-left: 5%;
-        padding-right: 5%;
+        max-width: 90dvw;
+        padding-left: 5svw;
+        padding-right: 5svw;
+        text-align: justify;
      }
 
      > span {
@@ -52,13 +58,14 @@ $light-gold: #B8A054;
     height: auto;
     width: 100px;
     border-radius: 50%;
+    margin: 0.25rem;
   }
 
   .highlighttwo {
     height: auto;
     width: 120px;
     border-radius: 20px;
-    margin: 0.2rem;
+    margin: 0.25rem 0.5rem 0.25rem 0;
 
     @media (max-width: 60em) {
       height: auto;
@@ -77,6 +84,8 @@ $light-gold: #B8A054;
     border-radius: 50%;
     @media (max-width: 60em) {      
       width: 100%;
+      height: 30rem;
+      border-radius: 10px;
    }
   }
   
