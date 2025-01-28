@@ -1,45 +1,43 @@
 .aboutVideo {
-    position: relative;   
+    position: relative;
     width: 100%;
     height: 100svh;
     font-family: time;
     margin-bottom: 20vh;
 
     @media (max-width: 40em) {
-        height: 50vh;
+        height: 40vh;
         margin-bottom: 0;
-              }
+    }
 
-  
-  .coverDrop {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
-    border-radius: 20px;
-    overflow: hidden;
-
-    @media (max-width: 40em) {
-        border-radius: 0;
-              }
-  
-    .coverPic {
+    .coverDrop {
+        height: 100%;
+        width: 100%;
         position: absolute;
-        z-index: -1;
-        object-fit: cover; 
-    object-position: center; 
-    width: 100%; 
-    height: 56.25vw; 
-    max-height: 100svh;
+        left: 50%;
+        transform: translate(-50%);
         border-radius: 20px;
+        overflow: hidden;
 
         @media (max-width: 40em) {
             border-radius: 0;
-                  }
-      }
-  
-  }
+        }
+
+        .coverPic {
+            position: absolute;
+            z-index: -1;
+            object-fit: cover;
+            object-position: center;
+            width: 100%;
+            height: 56.25vw;
+            max-height: 100svh;
+            border-radius: 20px;
+
+            @media (max-width: 40em) {
+                border-radius: 0;
+            }
+        }
+    }
 }
 
 .soundToggle {
@@ -58,10 +56,10 @@
     @media (max-width: 40em) {
         font-size: 0.75rem;
         top: 2px;
-    left: 2px;
-              }
-  }
-  
-  .soundToggle:hover {
+        left: 2px;
+    }
+}
+
+.soundToggle:hover {
     background: rgba(0, 0, 0, 0.9);
-  }
+}
