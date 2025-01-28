@@ -1,7 +1,8 @@
 'use client';
-import { usePathname } from 'next/navigation';
 import React, { useState, useRef, useEffect } from 'react';
+import { usePathname } from 'next/navigation';
 import Link from 'next/link';
+import Magnetic from '../magnetic/magnetic';
 import { gsap } from 'gsap';
 import styles from './Header.module.scss';
 
@@ -176,10 +177,12 @@ export default function Header() {
   return (
     <header className={styles.header}>
       <div className={styles.logo} ref={logoRef}>
-        <Link href='/'>
-          {' '}
-          <img src='/logowolete.png' alt='wolete logo' />
-        </Link>
+        <Magnetic>
+          <Link href='/'>
+            {' '}
+            <img src='/logowolete.png' alt='wolete logo' />
+          </Link>
+        </Magnetic>
       </div>
 
       {/* Desktop Nav */}
