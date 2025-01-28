@@ -7,7 +7,7 @@ $font-text: var(--font-playfair);
 
 $color-gradient-gold: linear-gradient(120deg, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
 $black: #000000;
-$dark-gray: #131212;
+$dark-gray: #0d0d0d;
 $gold: #BF953F;
 $reddish: #b52f27;
 $green: #4a9c45;
@@ -45,10 +45,4 @@ body {
 a {
   color: inherit;
   text-decoration: none;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
 }
