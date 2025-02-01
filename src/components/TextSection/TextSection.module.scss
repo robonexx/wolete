@@ -15,10 +15,9 @@ $white: #f8f8f8;
 .textSection {
     position: relative;
     min-height: fit-content;
-    height:fit-content;
+    height: fit-content;
     font-family: $font-text; 
     padding:2rem 10rem;
-    background: #0c0c0c;
     @media (max-width: 40em) {
         height: 100%;
         min-height: fit-content;
@@ -33,7 +32,7 @@ $white: #f8f8f8;
         line-height: 50px;
         width: 90%;
         display: block;
-        text-align: left;
+        text-align: center;
         align-content: center;
         background-blend-mode: difference;
         @media (max-width: 60em) {

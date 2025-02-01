@@ -4,12 +4,10 @@ import styles from './HomeSectionOne.module.scss';
 const HomeSectionOne = () => {
   return (
     <div className={styles.homeSectionOne}>
-      <p className={styles.tagline}> Rebecca Wooolete</p>
+      <p className={styles.tagline}>Rebecca Wooolete</p>
 
       <div className={styles.aboutHead}>
-        is a Dance artist, <br />
-        Educator, Organizer <br />
-        and Cultural Ambassador
+        is a Dance artist, Educator, Organizer and Cultural Ambassador
       </div>
 
       <p className={styles.aboutDes}>

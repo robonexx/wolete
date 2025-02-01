@@ -11,8 +11,6 @@ $font-text: var(--font-playfair);
 .sliderSection {
     min-height: 100vh;
     height: 100%;
-    font-family: 'Time', sans-serif; // Replace with a valid font
-    background-color: $dark-gray;
     overflow: hidden;
     position: relative;
     display: grid;
@@ -20,7 +18,7 @@ $font-text: var(--font-playfair);
     padding: 5rem 0;
   }
   
-  .season {
+  .subtext {
     text-align: center;
     text-transform: uppercase;
     font-size: clamp(1rem, 2vw, 1vw);
@@ -32,10 +30,11 @@ $font-text: var(--font-playfair);
     margin-top: 5%;
     width: 100%;
     text-align: center;
-    font-family: $font-text;
+    font-weight: 700;
+    font-family: $font-headline;
   }
   
-  .slideHead {
+  .headline {
     text-align: center;
     font-size: clamp(3rem, 4vw, 8vw);
     line-height: 100px;
@@ -45,7 +44,7 @@ $font-text: var(--font-playfair);
     margin-top: 10%;
     width: 100%;
     text-align: center;
-    font-family: $font-headline;
+    font-family: $font-text;
 
     @media (max-width: 980px) {
         margin-top: 12vh;
@@ -59,6 +58,7 @@ $font-text: var(--font-playfair);
     height: fit-content;
     position: relative;
     margin-top: 20vh;
+    border-radius: 20px;
   }
   
   .items {
@@ -68,6 +68,7 @@ $font-text: var(--font-playfair);
   }
   
   .entry {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -75,6 +76,8 @@ $font-text: var(--font-playfair);
     margin: 1em;
     border-radius: 20px;
     height: 580px;
+    cursor: pointer;
+
 
     @media (max-width: 60em) {
       width: 400px;
@@ -85,8 +88,10 @@ $font-text: var(--font-playfair);
     object-fit: cover;
     object-position: top center;
     height: 100%;
+    min-height: 0;
     width: 40rem;
     border-radius: 20px;
+    overflow: hidden;
 
     @media (max-width: 60em) {
       width: 25rem;

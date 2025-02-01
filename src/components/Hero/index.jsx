@@ -4,6 +4,8 @@ import { gsap } from 'gsap';
 import styles from './Hero.module.scss';
 
 const Hero = () => {
+  const heroRef = useRef(null);
+  const overlayRef = useRef(null);
   const videoRef = useRef(null);
   const title2Ref = useRef(null);
   const titleRef = useRef(null);
@@ -11,7 +13,19 @@ const Hero = () => {
   const buttonsRef = useRef(null);
 
   useEffect(() => {
-    const tl = gsap.timeline({ delay: 0.1 });
+    const tl = gsap.timeline({ delay: 0.2 });
+    tl.to(heroRef.current, {
+      opacity: 1,
+      duration: 0.6,
+      height: 'calc(100svh - 160px)',
+      ease: 'power3.out',
+    });
+    tl.from(overlayRef.current, {
+      opacity: 0,
+      duration: 0.8,
+      height: 0,
+      ease: 'power3.out',
+    });
     tl.from(videoRef.current, {
       opacity: 0,
       duration: 1,
@@ -53,9 +67,9 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className={styles.hero}>
-      <div className={styles.overlay}></div>
-      <div className={styles.videoContainer}>
+    <div className={styles.hero} ref={heroRef}>
+      <div className={styles.overlay} ref={overlayRef}></div>
+      <div className={styles.videoContainer} ref={videoRef}>
         <video
           width='100%'
           height='100%'

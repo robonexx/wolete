@@ -43,8 +43,8 @@ $font-text: var(--font-playfair);
         position: absolute;
         color: white;
         font-size: 6vw;
-        top: 26%;
-        left: 32%;
+        top: 45vh;
+        left: 30%;
         line-height: 80px;
         z-index: 2;
         font-family: $font-headline;
@@ -56,8 +56,9 @@ $font-text: var(--font-playfair);
             text-shadow: 5px 5px 5px rgba(0,0,0,.225);
         }
     }
-    .slant{
-        font-family: Arial;
+
+    .text {
+        font-family: $font-headline;
         font-style: italic;
     }
     
@@ -85,7 +86,7 @@ $font-text: var(--font-playfair);
         border: 1px solid white;
     }
     .image{
-        /* border-radius: 20px; */
+        border-radius: 20px;
         animation: move 10s ease-in infinite alternate;
         overflow: hidden;
         animation: move 10s ease-in infinite alternate;

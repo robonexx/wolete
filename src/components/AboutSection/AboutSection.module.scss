@@ -1,12 +1,15 @@
+$font-headline: var(--font-fira-sans);
+$font-text: var(--font-playfair);
+
 .aboutSection {
     position: relative;
-   height: 100dvh;
+   height: 150svh;
     width: 100%;
     font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 20vh;
 
     @media (max-width: 40em) {
-        height: 150dvh;
+        height: 185dvh;
         margin-bottom: 0;
               }
 
@@ -57,6 +60,10 @@
     .ingrHead {
       position: relative;
       font-size: clamp(2rem, 4vw, 5.5vw);
+      font-family: $font-headline;
+      font-style: italic;
+      font-weight: 700;
+      letter-spacing: 2px;
       margin-top: 20vh;
       left: 60px;
       text-align: left;
@@ -70,16 +77,17 @@ left: 1rem;
 
       > span {
         margin-top: 1rem;
+        font-style: normal;
       }
     }
   
     .ingrAbout {
-      font-size: clamp(1rem, 2vw, 0.9vw);
+      font-size: clamp(1rem, 2vw, 1.5rem);
       color: rgb(255, 255, 255);
       text-shadow: 5px 5px 5px rgba(0,0,0,.225);
       position: absolute;
       text-align: left;
-      font-family: Arial, sans-serif;
+      font-family: $font-text;
       margin-top: 17%;
       left: 60px;
       line-height: 1.7;

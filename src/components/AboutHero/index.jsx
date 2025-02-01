@@ -16,9 +16,9 @@ const AboutHero = () => {
       </div>
       <div className={styles.header}>
         <div className={styles.title}>
-          <span className={styles.slant}>Rooted</span> in the <br />
+          <span className={styles.text}>Rooted</span> in the <br />
           vibrant traditions{' '}
-          <span className={styles.slant}>of Afrocentric culture</span>
+          <span className={styles.text}>of Afrocentric culture</span>
         </div>
         <a href='/about/#video' className={styles.btn}>
           Watch me move

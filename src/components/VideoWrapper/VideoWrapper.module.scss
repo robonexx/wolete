@@ -3,7 +3,7 @@
     max-width: 100%;
     height: 100svh;
     font-family: times, serif;
-    background-color: #20201f;
+   /*  background-color: #20201f; */
     z-index: -1;
 
     @media (max-width: 40em) {
@@ -17,5 +17,6 @@
     object-position: center 10%;
     width: 100%;
     height: auto;
+    border-radius: 20px;
   }
   

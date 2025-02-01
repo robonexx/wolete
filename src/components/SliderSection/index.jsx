@@ -40,8 +40,8 @@ const SliderSection = () => {
 
   return (
     <div className={styles.sliderSection}>
-      <p className={styles.season}>Beyond the stage</p>
-      <div className={styles.slideHead}>Community empowerment</div>
+      <p className={styles.subtext}>Beyond the stage</p>
+      <div className={styles.headline}>Community empowerment</div>
       <div
         className={styles.sliderWrapper}
         onMouseEnter={handleMouseEnter}

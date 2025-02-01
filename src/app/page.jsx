@@ -2,7 +2,7 @@
 import { useEffect } from 'react';
 import { ReactLenis, useLenis } from 'lenis/react';
 import Hero from '@/components/Hero';
-import styles from './page.module.css';
+import styles from './page.module.scss';
 import HomeSectionOne from '@/components/HomeSectionOne';
 import VideoWrapper from '@/components/VideoWrapper';
 import HomeSectionThree from '@/components/HomeSectionThree';

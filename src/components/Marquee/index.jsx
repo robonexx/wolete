@@ -11,15 +11,15 @@ const Marquee = ({ images, folderPath = '/images/partners' }) => {
 
   useEffect(() => {
     const marquee = marqueeRef.current;
-    const totalWidth = marquee.scrollWidth / 2; // Half of the duplicated width for seamless animation
+    const totalWidth = marquee.scrollWidth / 2;
 
     gsap.to(marquee, {
-      x: -totalWidth, // Scroll the entire width of the images
-      duration: 30, // Adjust this value to control speed
+      x: -totalWidth,
+      duration: 30,
       ease: 'none',
-      repeat: -1, // Infinite animation
+      repeat: -1,
       modifiers: {
-        x: (x) => `${parseFloat(x) % totalWidth}px`, // Seamless looping using modulus
+        x: (x) => `${parseFloat(x) % totalWidth}px`,
       },
     });
   }, []);
@@ -27,22 +27,17 @@ const Marquee = ({ images, folderPath = '/images/partners' }) => {
   return (
     <div className={styles.marqueeWrapper}>
       <div className={styles.marquee} ref={marqueeRef}>
-        {[...images, ...images].map(
-          (
-            image,
-            index // Duplicate images for smooth looping
-          ) => (
-            <div key={index} className={styles.marqueeImageWrapper}>
-              <Image
-                src={`${folderPath}/${image}`}
-                alt={image.replace('.png', '')}
-                width={120} // Adjust image size
-                height={120} // Adjust image size
-                className={styles.image}
-              />
-            </div>
-          )
-        )}
+        {[...images, ...images].map((image, index) => (
+          <div key={index} className={styles.marqueeImageWrapper}>
+            <Image
+              src={`${folderPath}/${image}`}
+              alt={image.replace('.png', '')}
+              width={120}
+              height={100}
+              className={styles.image}
+            />
+          </div>
+        ))}
       </div>
     </div>
   );
