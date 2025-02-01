@@ -15,8 +15,8 @@ $font-text: var(--font-playfair);
    /*  background: linear-gradient(315deg, rgba(2,0,36,1) 0%, rgb(24, 23, 27) 66%, rgb(30, 29, 33) 100%); */
     position: relative; 
 
-    @media (max-width: 40em) {
-     height: 90dvh;
+    @media (max-width: 60em) {
+     height: 80dvh;
   }
   }
   
