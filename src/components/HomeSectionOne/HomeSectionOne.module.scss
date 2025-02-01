@@ -44,7 +44,7 @@ $font-text: var(--font-playfair);
     position: absolute;
     font-size: clamp(1rem, 2vw, 1.6vw);
     font-family: $font-text;
-    color: $gold;
+    color: $light-gold;
     margin-top: 12%;
    left: 30svw;
     line-height: 1.2;
@@ -52,10 +52,12 @@ $font-text: var(--font-playfair);
     font-weight: 600;
 
     @media (max-width: 40em) {
+      max-width: 40svw;
         margin-top: 30vh;
         text-shadow: 1px 1px rgb(40, 17, 77), 5px 5px 5px rgba(0, 0, 0, 0.579);
-        line-height: 30px;
-        left: 40%;
+        line-height: 1.2;
+        left: unset;
+        right: 1rem;
         transform: translateX(0);
         z-index: 100;
     }
@@ -75,6 +77,8 @@ $font-text: var(--font-playfair);
        background-color: $warm-earth;
        padding: 0.5rem 1rem;
        color: white;
+       max-width: 80svw;
+       border-radius: 10px;
     }
   }
   

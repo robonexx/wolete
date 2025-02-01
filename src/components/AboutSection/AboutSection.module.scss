@@ -5,7 +5,7 @@ $font-text: var(--font-playfair);
     position: relative;
    height: 150svh;
     width: 100%;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: $font-text;
     margin-bottom: 20vh;
 
     @media (max-width: 40em) {

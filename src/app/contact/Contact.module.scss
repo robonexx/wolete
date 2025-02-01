@@ -9,13 +9,13 @@ $warm-earth: #a4673f;
   max-width: 800px;
   min-height: 100dvh;
   overflow-x: hidden;
+  color: #f8f8f8;
 
   h2 {
     margin: 0 auto;
     padding: 0 2rem;
     width: 90%;
     font-size: clamp(2rem, 4vw, 6rem);
-    color: #f8f8f8;
     text-transform: uppercase;
     font-family: $font-text;
 
