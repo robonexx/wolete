@@ -12,6 +12,14 @@ export default function Dance() {
           dance with me!
         </p>
       </header>
+      <iframe
+        className={styles.frame}
+        src='https://www.youtube.com/embed/gPrwQA6Gjyc'
+        title='Production Video 1'
+        allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+        allowFullScreen
+      ></iframe>
+      {/* https://www.youtube.com/shorts/gPrwQA6Gjyc */}
 
       {/* Productions Section */}
       <section className={styles.section}>

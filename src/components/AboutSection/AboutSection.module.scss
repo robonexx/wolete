@@ -16,7 +16,7 @@ $font-text: var(--font-playfair);
   
   .coverDrop {
     height: 100%;
-    width: 90%;
+    width: 100%;
     position: absolute;
     left: 50%;
     transform: translate(-50%);
@@ -95,7 +95,8 @@ left: 1rem;
       max-width: 60%;
 
       @media (max-width: 40em) {
-        max-width: 90%;
+        max-width: calc(100% - 2rem);
+        width: 100%;
         left: 1rem;
         position: relative;
               }
