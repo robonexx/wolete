@@ -12,12 +12,6 @@ export default function About() {
       <AboutVideo />
       <h2>Resume:</h2>
       <AboutResume />
-      {/*  <h4>Logo test</h4>
-      <img
-        src='/images/logowoletebig.png'
-        alt='Image 1'
-        className={styles.logoimage}
-      /> */}
     </div>
   );
 }
