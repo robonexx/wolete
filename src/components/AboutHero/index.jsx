@@ -7,17 +7,15 @@ const AboutHero = () => {
     <div className={styles.abouthero}>
       <div className={styles.name}>
         {' '}
-        Rebecca / Wolete<sup>&#174;</sup>
-      </div>
-      <div className={styles.credit}>
-        <a href='https://www.instagram.com/wooolete/' className={styles.insta}>
-          @wooolete
+        <a href='https://www.instagram.com/wooolete/'>
+        Rebecca / @Wolete<sup>&#174;</sup>
         </a>
+       
       </div>
       <div className={styles.header}>
         <div className={styles.title}>
           <span className={styles.text}>Rooted</span> in the <br />
-          vibrant traditions{' '}
+          vibrant traditions{' '}<br />
           <span className={styles.text}>of Afrocentric culture</span>
         </div>
         <a href='/about/#video' className={styles.btn}>
