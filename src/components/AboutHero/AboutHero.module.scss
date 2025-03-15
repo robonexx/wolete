@@ -17,7 +17,7 @@ $font-text: var(--font-playfair);
     position: absolute;
     top: 0;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%) translateY(-200px);
     z-index: 100;
   }
 
@@ -49,6 +49,7 @@ $font-text: var(--font-playfair);
     z-index: 2;
     font-family: $font-headline;
     text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.225);
+    opacity: 0;
 
     @media (max-width: 40em) {
       top: 56%;
@@ -79,6 +80,7 @@ $font-text: var(--font-playfair);
     text-transform: uppercase;
     z-index: 2;
     transition: all 0.4s ease-in;
+    opacity: 0;
   }
   .btn:hover {
     background-color: black;
