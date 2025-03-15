@@ -17,6 +17,7 @@ $font-text: var(--font-playfair);
 
     @media (max-width: 60em) {
      height: 80dvh;
+     margin-bottom: 14dvh;
   }
   }
   
@@ -28,7 +29,7 @@ $font-text: var(--font-playfair);
     margin-top: 6%;
     left: 30vw;
 
-    @media (max-width: 40em) {
+    @media (max-width: 60em) {
       font-size: clamp(1.55rem, 2vw, 1vw);
         margin-top: 20vh;
         left: 1rem;
