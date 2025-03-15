@@ -154,6 +154,7 @@ $warm-earth: #a4673f;
     .subtitle {
       font-family: $font-text;
       font-size: clamp(1rem, 2vw, 1.5rem);
+      font-size: clamp(1rem, 2vw, 2vw);
       line-height: 1.5;
       margin: 0 auto 2rem;
       width: 100%;
