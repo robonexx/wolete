@@ -3,6 +3,14 @@ import { useEffect } from 'react';
 import { gsap } from 'gsap';
 
 import styles from './Yanko.module.scss';
+import ParagraphWord from '../TextRevealOnScroll/ParagraphWord';
+
+const paragraph =
+  'is a platform focusing on #African# dances and cultures #Our# #mission# ';
+const paragraph2 =
+  'is to #educate# people on #African# #dances# and #cultures# and empower artists from the African continent and diaspora. The aim is to provide artists with African heritage a platform to share their art and create a safe space for cultural exchange.';
+const paragraph3 =
+  '#Check# #out# #Y3NKO# #PROJECT# on instagram by clicking the button below. ';
 
 const Yanko = () => {
   useEffect(() => {
@@ -23,29 +31,18 @@ const Yanko = () => {
 
   return (
     <div className={styles.yanko}>
+      <img
+        src='/images/partners/Y3nko.png'
+        alt='Y3NKO'
+        className={styles.image}
+      />
       <div>
-        <p className={styles.text}>
-          <br />
-          is a platform focusing on <span>
-            African dances and cultures
-          </span>{' '}
-          <br />
-          <br />
-          <span>Our mission</span>, <br />
-          <br />
-          is to <span>educate people</span> on African dances and cultures and
-          empower artists from the
-          <span>African continent and diaspora.</span>. <br />
-          The aim is to provide artists with African heritage a platform to
-          share their art and create a safe space for cultural exchange. <br />
-          <span>Check out Y3NKO PROJECT</span> on instagram by clicking the
-          button below. <br />
-        </p>
-        <img
-          src='/images/partners/Y3nko.png'
-          alt='Y3NKO'
-          className={styles.image}
-        />
+        <ParagraphWord paragraph={paragraph} />
+        <div style={{ height: '5vh' }}></div>
+        <ParagraphWord paragraph={paragraph2} />
+        <div style={{ height: '5vh' }}></div>
+        <ParagraphWord paragraph={paragraph3} />
+        <div style={{ height: '5vh' }}></div>
       </div>
       <div className={styles.buttons}>
         <button className={styles.btnPrimary}>

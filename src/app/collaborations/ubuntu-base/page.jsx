@@ -6,13 +6,13 @@ import { gsap } from 'gsap';
 import styles from './page.module.scss';
 
 const paragraph =
-  ' Ubuntu Base aims to be the hub for the afro/swedish community in Stockholm. The aim is to contribute to the Swedish cultural scene and create a safe space for African cultural expression with a focus on shared dance- and music experiences.. ';
+  '#Ubuntu# #Base# aims to be the hub for the #afro/swedish# #community# in #Stockholm#. The aim is to contribute to the Swedish cultural scene and create a safe space for #African# #cultural# #expression# with a focus on shared dance- and music experiences.. ';
 
 const paragraph2 =
-  'Also promoting integration and cultural exchange with a mission to support people in their personal  development using creative tools..  ';
+  'Also promoting integration and #cultural# #exchange# with a #mission# to #support# people in their #personal# #development# using creative tools..  ';
 
 const paragraph3 =
-  'You can find more about UBUNTU BASE classes on the app, click the button below and come join us! ';
+  'You can find more about #UBUNTU# #BASE# classes on the app, click the button below and come join us! ';
 
 export default function Ubuntu() {
   const imageRef = useRef(null);
