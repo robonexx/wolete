@@ -9,8 +9,7 @@ const AboutSection = () => {
     <div className={styles.aboutSection}>
       <div className={styles.coverDrop}>
         <div className={styles.ingrHead}>
-          About <br />
-          Me&nbsp; <span>❤️</span>
+         Rebecca Wolete
         </div>
         <p className={styles.ingrAbout}>
           Rebecca Wolete is a Dance artist, Educator, Organizer and Cultural

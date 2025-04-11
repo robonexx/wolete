@@ -18,8 +18,10 @@ const AboutVideo = () => {
       <div className={styles.coverDrop}>
         <video
           ref={videoRef}
+          playsInline
           loop
           autoPlay
+          preload="auto"
           muted={isMuted}
           src='/videos/compilation.webm'
           className={styles.coverPic}

@@ -6,8 +6,10 @@ const VideoWrapper = () => {
     <div className={styles.video}>
       <video
         src='/videos/wolete.webm'
-        autoPlay
+        playsInline
         loop
+        autoPlay
+        preload='auto'
         muted
         className={styles.videoPlayer}
       />
